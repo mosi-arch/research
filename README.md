@@ -8,5 +8,7 @@ Researches about mathematical and blockchain industry, published on my social me
 | Mathematics [here](https://github.com/mosi-arch/research/tree/main/Mathematics) | [- Prime numbers in cryptography](https://github.com/mosi-arch/research/blob/main/Mathematics/01-prime-number-cryptography.md) <br /> [- Safe unique number](https://github.com/mosi-arch/research/blob/main/Mathematics/02-safe-unique-random-number.md) <br /> [- Random number on chaos](https://github.com/mosi-arch/research/blob/main/Mathematics/03-random-chaos-random-matrix.md) |
 | Documents [here](https://github.com/mosi-arch/research/tree/main/Documents) | [- Article: Random numbers in Pi](https://github.com/mosi-arch/research/blob/main/Documents/Article%20on%20random%20numbers%20and%20pi%20algorithm.pdf) |
 
+---
+
 - GNU-GPL3 [License](https://github.com/mosi-arch/research/blob/main/LICENSE)
-- MMOSI-SOL [LOGO](https://github.com/mosi-arch/research/blob/main/MOSiSOL.txt)
+- MOSI-SOL [LOGO](https://github.com/mosi-arch/research/blob/main/MOSiSOL.txt)
