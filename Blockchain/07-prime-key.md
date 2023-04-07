@@ -59,7 +59,7 @@ note:
 - **b** would/shuld/must/always be a prime number
 - **y** can use for **private key**, this example make address: `0x6f3988E36894a57188114ad5DE236a9Cb4cEEE18`
 
-fun moment:
+fun information:
 - can you decipher **a** (example variable **a**)? have the surprise for you!
 - did you know "variable **b**" is a prime number and have this name -> "Evil Prime number" 
 
