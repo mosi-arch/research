@@ -146,9 +146,9 @@ the true calculation is the length. so we use big numbers like 40 digits
 ```
 x = primeGeneratorRandom(48 digit)
 y = primeGeneratorRandom(52 digit)
-// r is rsa
+// r is like gpg
 r = x * y
-// z is like encrypted gpg
+// z is gpg encrypted 
 z = hash(r)
 ```
 security details: rsa made by prime numbers lentgh must be 2^2048 to not cracking in this decade (2020 to 2030)\
