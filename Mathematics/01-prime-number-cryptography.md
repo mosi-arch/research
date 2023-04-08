@@ -129,6 +129,9 @@ For safe generating the random number by a hardware, you can use "Atari" transis
 R=rivest - S=shamir - A=Adleman ==> RSA build in 1977. basement of zk-proof in 2019to2023(now is 2023).\
 to old algorithm and useless on blockchain industry, but popular, because noob(non-creative) engineers have big products!!!
 
+- rsa encrypt: m^e mod n = c
+- rsa decrypt: c^d mod n = m
+
 #### My proof:
 **bank problem**: you have big number as N (certificated you as an owner), you lock the N and the key owner is the bank (as T)\
 so your secure from fraud and scams, but the key owner not you!\
