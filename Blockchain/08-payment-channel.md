@@ -1,4 +1,4 @@
-## How to build "payment channel" on Ethereum:
+## How to build "payment channel" on Ethereum virtual machine (EVM):
 - 1- create channel
 - 2- require multi signature for create channel
 - 3- closing channel automatically after found finish
