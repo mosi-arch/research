@@ -55,7 +55,7 @@ decipher: uint i = x^b
 ```
 
 note: 
-- **b** is the **key** for deciphering
+- **b** is the **key** for cipher & deciphering
 - **b** would/shuld/must/always be a prime number
 - **y** can use for **private key**, this example make address: `0x6f3988E36894a57188114ad5DE236a9Cb4cEEE18`
 
