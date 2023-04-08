@@ -51,7 +51,9 @@ input : b = 1000000000000066600000000000001
 output : uint256 x = 1099111320276219782373852476762
 output : bytes32 y = 0x36d7a50085e421c5578e8978df08e7684b66d5dadbd8ee2791777c9715f5e6d5
 
-decipher: uint i = x^b
+decipher: 
+uint i = x^b
+(i == a) === true
 ```
 
 note: 
