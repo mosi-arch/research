@@ -124,4 +124,4 @@ ram simulation example :
 - "r": "9711786588494660349237493733220162383806500538113175522243601272905808251588",
 - "position": "4"  --> always a rythm exist for guess (snif). evm not immune
 
-if 'y' using 'xor' by any key, the code overfloe memory buffer and code will be break.
+if output variable 'y' using 'xor' by any key, the code overflow memory buffer and code will be break.
