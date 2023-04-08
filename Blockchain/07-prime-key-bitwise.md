@@ -106,7 +106,7 @@ contract BitTest {
     }
 }
 ```
-2 usecase for variable output "position"
+two usecase for variable output "position"
 #### A.
 position cheat sheet (hex maker) :
 - 0 to 9 positions exactly same of the number
