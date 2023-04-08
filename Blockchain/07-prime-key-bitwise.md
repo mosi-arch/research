@@ -123,7 +123,7 @@ ram simulation example :
 "x": "36516136433507714556481507284757523525550975291680945358964353894568634540880",
 "y": "0x1da15cb88d2f0e1be9290c6933bb2e8c6359799e06fcd6e5d8969b8e59e32c46",
 "r": "9711786588494660349237493733220162383806500538113175522243601272905808251588",
-"position": "4"  --> always a rythm exist for guess (snif). evm not immune
+"position": "4"  // --> always a rythm exist for guess (snif). evm not immune
 ```
 
 if output variable 'y' using 'xor' by any key, the code overflow memory buffer and code will be break.
