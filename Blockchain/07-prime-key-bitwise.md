@@ -72,3 +72,54 @@ disclaimer:
 
 tips:
 - in binary equations meybe "overflow" happend. so we use module of answer.
+
+---
+
+## Simulator (ram)
+using 'BitwiseLib' library
+```solidity
+contract BitTest {
+    using BitwiseLib for uint;
+    event listen(uint,uint,uint,uint,uint,uint,bytes32,uint,uint);
+        
+    // simulator not immune
+    function ram(uint a, uint b) public returns (uint x, bytes32 y, uint position) {
+        // ram simulation start
+        uint i = a.not();
+        uint j = b.not();
+        uint h2o = a.and(j); // return a
+        uint co2 = b.and(i); // return b
+        uint fin = h2o.or(co2); // sum a + b
+        // ram simulation finish
+
+        fin > a ? 
+        x = uint(keccak256(abi.encode(fin.and(fin)))) : 
+        x = uint(keccak256(abi.encode(fin.or(fin))));
+
+        // bytes32 why = keccak256(abi.encode(fin.not()));
+        y = keccak256(abi.encode(fin.not()));
+        uint r = x % uint(y);
+        // ( ,y) = uint(why).xor(r); // buffer overflow
+        position = r % 16; // translate this line = biggest bug of EVM. hackers can guess you!
+        
+        emit listen(i,j,h2o,co2,fin,x, y, r, position);
+    }
+}
+```
+2 usecase for variable output "position"
+#### A.
+position cheat sheet (hex maker) :
+- 0 to 9 positions exactly same of the number
+- 10 = a | 11 = b | 12 = c | 13 = d | 14 = e | 15 = f......
+
+#### B.
+ram simulation example :
+- "i": "115792089237316195423570985008687907853269984665640564039457584007913129639925",
+- "j": "115792089237316195423570985008687907853269984665640564039457584007913129639915",
+- "h2o": "10",
+- "co2": "20",
+- "fin": "30",
+- "x": "36516136433507714556481507284757523525550975291680945358964353894568634540880",
+- "y": "0x1da15cb88d2f0e1be9290c6933bb2e8c6359799e06fcd6e5d8969b8e59e32c46",
+- "r": "9711786588494660349237493733220162383806500538113175522243601272905808251588",
+- "position": "4"  --> always a rythm exist for guess (snif). evm not immune
