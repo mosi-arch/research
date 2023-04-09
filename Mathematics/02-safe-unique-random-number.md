@@ -15,6 +15,31 @@ Pi = 3.1415926535 8979323846 2643383279 5028841971 6939937510 5820974944
 
 This equation always is : **O(log n)**
 
+Example 1 of 1 is prime:
+```js
+// Compute number pi to 1000 digits
+const pi = Math.PI.toPrecision(1000); 
+// Slice the prime numbers from that
+function getPrimeNumbers(pi) {
+    let primeNumbers = [];
+    for (let i = 0; i < pi.length; i++) {
+        if (isPrime(pi[i])) {
+            primeNumbers.push(pi[i]);
+        }
+    }
+    return primeNumbers;
+} 
+// Check if a number is prime
+function isPrime(num) {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return num > 1;
+}
+```
+
 ## Now more complex equation:
 Imagine you choosing the number "1"\
 Position is 0, 1+0 = 1\
