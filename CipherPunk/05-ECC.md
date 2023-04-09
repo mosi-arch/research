@@ -62,3 +62,5 @@ async function eccDecrypt(privateKey, ciphertextMsg) {
 
 ### Note:
 This implementation of ECC (Elliptic Curve Cryptography) formula.
+
+![ECC](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/ECClines.svg/680px-ECClines.svg.png)
