@@ -251,5 +251,7 @@ function getPrimeNumbers(pi) {
 }
 ```
 
+---
+
 ## Personal comment:
 Functional programming make better life for code & coder!
