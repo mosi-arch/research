@@ -254,4 +254,8 @@ function getPrimeNumbers(pi) {
 ---
 
 ## Personal comment:
-Functional programming make better life for code & coder!
+Functional programming make better life for code & coder!\
+Blockchain requirments, proves, compute power, even smartcontracts need good performance. So we need solution for the better performance to make better environment for community of user and developers.\
+Unfortunately the blockchain creators & providers not elite programmer or philosopher mindset. Biggest creator is a (racist)journalist and first developer on his team a big facist(racist) ever (vb&fab). They are following the point of money and have not knowledge about the solution-programming at all. This problem would/should to solve by community of programmers. Dont afired about the power of companies, at the end will people win this game.\
+**Future belong brave-minds**
+
