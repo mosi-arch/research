@@ -1,4 +1,19 @@
 ## Lambda & Recursion in Functional Programming
+
+### Functional Programming
+Functional Programming is a type of programming paradigm that focuses on the use of functions to solve problems. It is based on the idea that functions are the primary building blocks of programs, and that programs should be composed of functions that are easy to understand and maintain. Functional programming is often used to create programs that are more efficient and easier to debug.
+
+#### Mathematical Proof:
+Let `f(x)` be a function that takes one argument `x` and returns a single value.
+
+We can define a functional program as follows:
+
+`P = {f1(x), f2(x), ..., fn(x)}`
+
+This program is composed of a set of functions `{f1(x), f2(x), ..., fn(x)}` that take one argument x and return a single value.
+
+Therefore, we can conclude that functional programming is a type of programming paradigm that focuses on the use of functions to solve problems.
+
 ### Lambda
 Lambda is a type of function in functional programming that takes one or more arguments and returns a single value. 
 It is often used to create anonymous functions, which are functions that are not bound to a name. 
@@ -11,7 +26,7 @@ Recursion is a powerful tool for solving complex problems, but it can also be di
 can lead to stack overflow errors if not used correctly.
 
 
-### Mathematical Proof:
+#### Mathematical Proof:
 Let `f(x)` be a function that takes one argument x and returns a single value.
 
 We can define a lambda function as follows:
@@ -32,13 +47,13 @@ It is often used to create recursive functions, which are functions that call th
 Y Combinator is a powerful tool for solving complex problems, but it can also be difficult to debug and can lead to 
 stack overflow errors if not used correctly.
 
-### Mathematical Proof:
-Let `f(x)` be a function that takes one argument x and returns a single value.
+#### Mathematical Proof:
+Let `f(x)` be a function that takes one argument `x` and returns a single value.
 
 We can define a Y Combinator as follows:
 - `Y(f) = λx.f(λy.x(x)(y))`
 
-This Y Combinator takes one argument f and returns a new function that takes one argument x and returns the value of `f(λy.x(x)(y))`.
+This Y Combinator takes one argument `f` and returns a new function that takes one argument `x` and returns the value of `f(λy.x(x)(y))`.
 
 Therefore, we can conclude that Y Combinator is a type of function in functional programming.
 
@@ -236,4 +251,5 @@ function getPrimeNumbers(pi) {
 }
 ```
 
+## Personal comment:
 Functional programming make better life for code & coder!
