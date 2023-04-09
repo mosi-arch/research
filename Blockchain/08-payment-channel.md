@@ -6,7 +6,7 @@
 - 5- create a factory contract for creating new channels
 
 #### proof of payment 
-"htlc payment" (hash time transaction 'close')
+"Hashed Timelock Contracts (HTLCs)" (hash timelock contract/transaction '[here](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts)')
 
 #### To build a payment channel on Ethereum, you can follow these steps:
 - Create a smart contract for the payment channel.
