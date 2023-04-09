@@ -15,7 +15,7 @@ Pi = 3.1415926535 8979323846 2643383279 5028841971 6939937510 5820974944
 
 This equation always is : **O(log n)**
 
-Example 1 of 1 is prime:
+Example 1 of 1 is prime: (remember we need check valid prime num, not 1 of 1. maybe a num by hundred digits!)
 ```js
 // Compute number pi to 1000 digits
 const pi = Math.PI.toPrecision(1000); 
