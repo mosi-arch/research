@@ -29,7 +29,7 @@ m = c^d(mod n)
 ```
 where m is the original message (plaintext) 
 
-#### Here are the mathematical formulas used in RSA algorithm:
+#### The mathematical formulas used in RSA algorithm:
 
 - Prime Number: A prime number is a number that is only divisible by 1 and itself. Example: 2, 3, 5, 7, 11, 13, etc.
 
@@ -56,7 +56,7 @@ d ≡ e^-1 (mod Φ(n))
             d is the private exponent\
             n is the product of two primes (i.e. n = pq)
 
-Here is the JavaScript code for RSA Encryption and Decryption:
+#### Example of JavaScript code for RSA Encryption and Decryption:
 
 ```js
 // RSA Encryption
