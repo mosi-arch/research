@@ -1,4 +1,5 @@
-## How to build "payment channel" on Ethereum virtual machine (EVM):
+# How to build "payment channel" on Ethereum virtual machine (EVM):
+## PART 1
 - 1- create channel
 - 2- require multi signature for create channel
 - 3- closing channel automatically after found finish
@@ -84,3 +85,49 @@ contract PaymentChannelFactory {
 
 ### Disclaimer Note: 
 that this is just an example implementation and you may need to modify it to suit your specific needs.
+
+## PART 2
+using "y combinator" for creating "payment channel" on ethereum. code in javascript
+
+```JS
+function YCombinator(func) {
+    return (function(x) {
+        return func(function(y) {
+            return (x(x))(y);
+        });
+    })(function(x) {
+        return func(function(y) {
+            return (x(x))(y);
+        });
+    });
+} 
+// Create a payment channel on Ethereum
+function createPaymentChannel(sender, receiver, amount) {
+    return YCombinator(function(f) {
+        return function(sender, receiver, amount) {
+            // Create a new Ethereum account
+            let account = web3.eth.accounts.create();
+            // Send the amount from the sender to the new account
+            web3.eth.sendTransaction({
+                from: sender,
+                to: account.address,
+                value: amount
+            });
+            // Create a smart contract to manage the payment channel
+            let contract = new web3.eth.Contract(paymentChannelABI);
+            // Deploy the contract
+            contract.deploy({
+                data: paymentChannelBytecode,
+                arguments: [sender, receiver, account.address]
+            }).send({
+                from: sender,
+                gas: 1000000
+            });
+            // Return the address of the deployed contract
+            return contract.options.address;
+        };
+    })(sender, receiver, amount);
+}
+```
+#### Personal comment:
+WHY USING **Y COMBINATOR FUNCTION PATTER/PROGRAMMING**? function programming the true solution for blockchain programming, but some "idiot wealth seekers" love to waist time...
