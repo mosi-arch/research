@@ -9,7 +9,7 @@ pragma solidity >=0.8.0 <0.9.0;
 
 library BitwiseLib {
     function xor(uint a, uint b) pure internal returns (uint x, bytes32 y) {
-        x = a^b; // Lambda/recursion --> x = bool(a) ^ bool(b) == 1 
+        x = a^b; // use Lambda-recursion better in solidity --> x = bool(a) ^ bool(b) == 1 
         y = keccak256(abi.encodePacked(x)); // encodePacked method not have unnecesory " 0 "
     }
     
