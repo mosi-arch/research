@@ -32,7 +32,7 @@ each block is transformed using multiple rounds of substitution and permutation 
 
 #### Example of JavaScript code for AES Encryption and Decryption:
 
-```
+```js
 // node-js
 const crypto = require('crypto');
 
