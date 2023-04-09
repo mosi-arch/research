@@ -113,7 +113,8 @@ function merkleProof(data) {
 
 - using "y combinator" for ,merkle proof, code in js! - solution 2
 
-```jsfunction YCombinator(func) {
+```js
+function YCombinator(func) {
     return (function(x) {
         return func(function(y) {
             return (x(x))(y);
