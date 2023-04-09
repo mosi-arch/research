@@ -130,4 +130,5 @@ function createPaymentChannel(sender, receiver, amount) {
 }
 ```
 #### Personal comment:
-WHY USING **Y COMBINATOR FUNCTION PATTERN/PROGRAMMING**? function programming the true solution for blockchain programming, but some "idiot wealth seekers" love to waist time...
+WHY USING **Y COMBINATOR FUNCTION PATTERN/PROGRAMMING**? function programming the true solution for blockchain programming, but some "idiot wealth seekers" love to waist time...\
+More information about "Functional Programming" [here](https://github.com/mosi-arch/research/blob/main/Mathematics/04-lambda-recursion-function-programming.md) 
