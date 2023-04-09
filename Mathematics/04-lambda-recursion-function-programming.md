@@ -97,6 +97,7 @@ int YCombinator(int (*func)(int)) {
 }
 ```
 
+#### Examples from simple to complex in real programming:
 - using "y combinator" for ,merkle proof, code in javascript - solution 1
 ```js
 function YCombinator(func) {
