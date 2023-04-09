@@ -46,6 +46,7 @@ which means it uses both symmetric-key encryption and public-key encryption.
 #### Example of JavaScript code for PGP Encryption and Decryption:
 
 ```js
+// node-js
 const crypto = require('crypto');
 
 // PGP Encryption
