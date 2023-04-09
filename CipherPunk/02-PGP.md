@@ -35,7 +35,7 @@ which means it uses both symmetric-key encryption and public-key encryption.
    - Decrypt the signature using sender's public key
    - Compare the two hashes. If they are the same, the message is authentic.
 
-#### Here are the mathematical formulas used in PGP algorithm:
+#### The mathematical formulas used in PGP algorithm:
 
 - Symmetric Key Encryption: This is a type of encryption that uses the same key to encrypt and decrypt a message.
 
@@ -43,7 +43,7 @@ which means it uses both symmetric-key encryption and public-key encryption.
 
 - Digital Signature: This is a mathematical technique used to ensure the authenticity, integrity and non-repudiation of data. It involves generating a hash of the message and then encrypting that hash with the sender's private key.
 
-#### Here is the JavaScript code for PGP Encryption and Decryption:
+#### Example of JavaScript code for PGP Encryption and Decryption:
 
 ```js
 const crypto = require('crypto');
