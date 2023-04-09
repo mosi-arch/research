@@ -94,7 +94,9 @@ contract BitTest {
 
         fin > a ? 
         x = uint(keccak256(abi.encode(fin.and(fin)))) : 
-        x = uint(keccak256(abi.encode(fin.or(fin))));   // currect on production project: uint(uint160(keccak256(abi.encode(fin.or(fin)))))
+        x = uint(keccak256(abi.encode(fin.or(fin))));   
+        // currect on production project: uint(uint160(keccak256(abi.encode(fin.or(fin)))))
+        // because bytes32 = uint160 then cast to uint256
 
         // bytes32 why = keccak256(abi.encode(fin.not()));
         y = keccak256(abi.encode(fin.not()));
