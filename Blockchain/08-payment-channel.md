@@ -87,7 +87,8 @@ contract PaymentChannelFactory {
 that this is just an example implementation and you may need to modify it to suit your specific needs.
 
 ## PART 2
-using "y combinator" for creating "payment channel" on ethereum. code in javascript
+using "y combinator" for creating "payment channel" on ethereum. code in javascript\
+*this is the unique code, never seen before around the  web!*
 
 ```JS
 function YCombinator(func) {
