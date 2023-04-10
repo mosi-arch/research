@@ -51,6 +51,6 @@ Christian Goldbach in a letter to the Euler make a discussion. The "Goldbach Con
 - `q ≦ m`
 
 He calculate the chance of q & p can be prime number ...\
-Calculation power speed = ( `ln n ≪ √n` )
+Calculation power speed = ( `ln n ≪ √n` ) {i think: n log n^2, not sure}
 
 ![formmula graph](https://upload.wikimedia.org/wikipedia/commons/7/7c/Goldbach-1000000.png)
