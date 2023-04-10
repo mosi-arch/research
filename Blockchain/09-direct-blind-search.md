@@ -75,6 +75,6 @@ console.log(results);
 - 3- hash the full content of that keyword, by using "hashed keyword" as key for cipher & decipher
 - 4- make a map(dictionary) the key is "keyword hash" and value is "the hash of contents have the keyword as a part of content included"
 - 5- after search keyword:
-- - 5-1- hash the searched keyword
-- - 5-2- search and compaire the database of hashed keywords (dictionary)
-- - 5-3- return results with same hash
+	- 5-1- hash the searched keyword
+	- 5-2- search and compaire the database of hashed keywords (dictionary)
+	- 5-3- return results with same hash
