@@ -255,8 +255,13 @@ function getPrimeNumbers(pi) {
 ---
 
 ## Personal comment:
-Functional programming make better life for code & coder!\
+**Functional programming** make better life for code & coder!\
 Blockchain requirments, proves, compute power, even smartcontracts need good performance. So we need solution for the better performance to make better environment for community of user and developers.\
 Unfortunately the blockchain creators & providers not elite programmer or philosopher mindset. Biggest creator is a (racist)journalist and first developer on his team a big facist(racist) ever (vb&fab). They are following the point of money and have not knowledge about the solution-programming at all. This problem would/should to solve by community of programmers. Dont afired about the power of companies, at the end will people win this game.\
 **Future belong brave-minds**
 
+**Why**?\
+There is a little different in paradim... in blockchain (including the smartcontract) we work by sensetive data and immutable variables(constants). We accept the blockchain is immune, but the smartcontracts are immune like the blockchain?\
+The answer is not and yes! (the Schrödinger's cat [1](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)), pleased some articles about "declarative vs imperative programming".
+
+![Schrödinger's cat](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Schrodingers_cat.svg/330px-Schrodingers_cat.svg.png)
