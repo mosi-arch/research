@@ -49,5 +49,7 @@ Christian Goldbach in a letter to the Euler make a discusion. The "Goldbach Conj
 - 2m = p + q
 - p >= m
 - q <= m
+- 
 He calculate the chance of q & p are be prime number ... calculation power speed = m/log m^2
-![formmula graph](https://en.wikipedia.org/wiki/File:Goldbachs_comet.gif)
+
+![formmula graph](https://upload.wikimedia.org/wikipedia/commons/7/7c/Goldbach-1000000.png)
