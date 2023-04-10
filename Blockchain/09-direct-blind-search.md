@@ -11,7 +11,8 @@ function searchDictionary(keyword, dictionary) {
 	const results = [];
 	for (const key in dictionary) {
 		if (key === hashedKeyword) {
-			results.push(dictionary[key]); // add the value to the results array if the hashed key matches the hashed keyword
+			// add the value to the results array if the hashed key matches the hashed keyword
+			results.push(dictionary[key]); 
 		}
 	}
 	return results;
