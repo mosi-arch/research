@@ -264,7 +264,7 @@ Unfortunately the blockchain creators & providers not elite programmer or philos
 There is a little different in paradim... in blockchain (including the smartcontract) we work by sensetive data and immutable variables(constants). We accept the blockchain is immune, but the smartcontracts are immune like the blockchain?\
 The answer is: not and yes! (the Schrödinger's cat [[read more]](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)), please read some articles about "declarative vs imperative programming".
 
-**Conclusion**:\ 
+**Conclusion**:\
 Blockchain programming need languages like C++, because combined paradigms and immutability together.\ 
 But for smart contracts we going to the wrong way!
 
