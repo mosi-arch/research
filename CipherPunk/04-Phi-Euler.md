@@ -41,3 +41,13 @@ function phi(n) {
 
 ### Note: 
 This implementation of phi function uses a well-known algorithm called Euler’s Totient Function Formula.
+
+#
+
+### Funny time:
+Christian Goldbach in a letter to the Euler make a discusion. The "Goldbach Conjecture" [read more](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture) 
+- 2m = p + q
+- p >= m
+- q <= m
+He calculate the chance of q & p are be prime number ... calculation power speed = m/log m^2
+![formmula graph](https://en.wikipedia.org/wiki/File:Goldbachs_comet.gif)
