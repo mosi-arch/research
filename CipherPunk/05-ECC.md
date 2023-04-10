@@ -70,9 +70,9 @@ This implementation of ECC (Elliptic Curve Cryptography) formula.
 #### Fun
 `y^2 = x^3 + 3x + b (mod p)`
 
-- p = the hours on the cloack
+- p = the hours on the clock (generate by phi p & phi q)
 - b = random big num
-- x, y = prime number
+- x, y = prime number (phi p & phi q)
 - p, q = have x & y axis on the curve (they are use in phi for generating randoms)
 
 this is the ecc revers engineering!\
