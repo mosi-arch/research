@@ -1,7 +1,8 @@
 ## Search & indexing by using Cryptography
 This is a search algorithm for searching in a "dictionary" to find the same results. The search keyword must encrypting by sha-256, 
 because the dictionary key's are sha-256. The search results show in an array.\
-The example code by JavaScript:
+
+#### The example code by JavaScript:
 
 ```javascript
 const crypto = require('crypto'); // import the built-in crypto module for hashing
@@ -28,4 +29,42 @@ const dictionary = {
 };
 
 const results = searchDictionary('apple', dictionary); // returns ['apple']
+```
+#
+
+#### Another example in Javascript:
+```js
+// Function to hash a keyword using SHA-256 algorithm
+function hashKeyword(keyword) {
+	let hashedKeyword = sha256(keyword);
+	return hashedKeyword;
+}
+
+// Function to hash full content using a hashed keyword as key for cipher and decipher
+function hashContent(keyword, content) {
+	let hashedKeyword = hashKeyword(keyword);
+	let cipher = CryptoJS.AES.encrypt(content, hashedKeyword);
+	let hashedContent = sha256(cipher.toString());
+	return hashedContent;
+}
+
+// Function to create a dictionary of hashed keywords and their corresponding hashed content
+function createHashedKeywordsDictionary(keywords, contents) {
+	let dictionary = {};
+	for (let i = 0; i < keywords.length; i++) {
+	let hashedKeyword = hashKeyword(keywords[i]);
+	let hashedContent = hashContent(keywords[i], contents[i]);
+	dictionary[hashedKeyword] = hashedContent;
+}
+return dictionary;
+}
+
+// Sample usage
+let keywords = ['important', 'keywords'];
+let contents = ['This document contains important information.', 'Use these keywords to find what you are looking for.'];
+let dictionary = createHashedKeywordsDictionary(keywords, contents);
+let searchedKeyword = 'important';
+let hashedSearchedKeyword = hashKeyword(searchedKeyword);
+let results = dictionary[hashedSearchedKeyword];
+console.log(results);
 ```
