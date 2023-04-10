@@ -47,10 +47,10 @@ This implementation of phi function uses a well-known algorithm called Euler’s
 ### Funny time:
 Christian Goldbach in a letter to the Euler make a discusion. The "Goldbach Conjecture" [read more](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture) 
 - 2m = p + q
-- p >= m
-- q <= m
+- p ≧ m
+- q ≦ m
 
-He calculate the chance of q & p are be prime number ...\
+He calculate the chance of q & p can be prime number ...\
 Calculation power speed = ( ln n ≪ √n )
 
 ![formmula graph](https://upload.wikimedia.org/wikipedia/commons/7/7c/Goldbach-1000000.png)
