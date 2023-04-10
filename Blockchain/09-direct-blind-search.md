@@ -1,6 +1,6 @@
 ## Search & indexing by using Cryptography
 This is a search algorithm for searching in a "dictionary" to find the same results. The search keyword must encrypting by sha-256, 
-because the dictionary key's are sha-256. The search results show in an array.\
+because the dictionary key's are sha-256. The search results show in an array.
 
 #### The example code by JavaScript:
 
