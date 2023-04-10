@@ -64,3 +64,16 @@ async function eccDecrypt(privateKey, ciphertextMsg) {
 This implementation of ECC (Elliptic Curve Cryptography) formula.
 
 ![ECC](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/ECClines.svg/680px-ECClines.svg.png)
+
+#
+
+#### Fun
+`y^2 = x^3 + 3x + b (mod p)`
+
+- p = the hours on the cloack
+- b = random big num
+- x, y = prime number
+- p, q = have x & y axis on the curve (they are use in phi for generating randoms)
+
+this is the ecc revers engineering!\
+in fact you can create a 4096 encryption machine less then 100$
