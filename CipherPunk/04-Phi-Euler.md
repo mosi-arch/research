@@ -45,7 +45,7 @@ This implementation of phi function uses a well-known algorithm called Euler’s
 #
 
 ### Funny note:
-Christian Goldbach in a letter to the Euler make a discusion. The "Goldbach Conjecture" [read more](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture) 
+Christian Goldbach in a letter to the Euler make a discussion. The "Goldbach Conjecture" [read more](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture) 
 - `2m = p + q`
 - `p ≧ m`
 - `q ≦ m`
