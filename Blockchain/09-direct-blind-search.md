@@ -79,4 +79,4 @@ console.log(results);
 	- 5-2- search and compaire the database of hashed keywords (dictionary)
 	- 5-3- return results with same hash
 
-"Javascript codes built-in nodejs"
+"Javascript codes use built-in nodejs"
