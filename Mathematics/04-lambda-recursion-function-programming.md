@@ -265,7 +265,7 @@ There is a little different in paradim... in blockchain (including the smartcont
 The answer is: not and yes! (the Schrödinger's cat [[read more]](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)), please read some articles about "declarative vs imperative programming".
 
 **Conclusion**:\
-Blockchain programming need languages like C++, because combined paradigms and immutability together.\ 
+Blockchain programming need languages like C++, because combined paradigms and immutability together.\
 But for smart contracts we going to the wrong way!
 
 ![Schrödinger's cat](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Schrodingers_cat.svg/330px-Schrodingers_cat.svg.png)
