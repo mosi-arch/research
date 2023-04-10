@@ -262,6 +262,6 @@ Unfortunately the blockchain creators & providers not elite programmer or philos
 
 **Why**?\
 There is a little different in paradim... in blockchain (including the smartcontract) we work by sensetive data and immutable variables(constants). We accept the blockchain is immune, but the smartcontracts are immune like the blockchain?\
-The answer is not and yes! (the Schrödinger's cat [1](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)), pleased some articles about "declarative vs imperative programming".
+The answer is not and yes! (the Schrödinger's cat [[read more]](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)), pleased some articles about "declarative vs imperative programming".
 
 ![Schrödinger's cat](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Schrodingers_cat.svg/330px-Schrodingers_cat.svg.png)
