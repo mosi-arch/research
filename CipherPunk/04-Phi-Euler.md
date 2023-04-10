@@ -50,6 +50,7 @@ Christian Goldbach in a letter to the Euler make a discusion. The "Goldbach Conj
 - p >= m
 - q <= m
 - 
-He calculate the chance of q & p are be prime number ... calculation power speed = m/log m^2
+He calculate the chance of q & p are be prime number ...\
+Calculation power speed = https://wikimedia.org/api/rest_v1/media/math/render/svg/bdee86597d2fc05920dd39988f011655cc335b55
 
 ![formmula graph](https://upload.wikimedia.org/wikipedia/commons/7/7c/Goldbach-1000000.png)
