@@ -16,7 +16,7 @@
 - Allow for manual channel closing by requiring both signers to agree to close the channel.
 - Optionally, create a factory contract to enable easy creation of new payment channels.
 
-#### write Smartcontract by using solidity
+#### Now, write Smartcontract by using solidity
 To create a payment channel on Ethereum using Solidity, you can follow these steps:
 - Create a contract for the payment channel, which will include variables for the two parties involved, the balance of the channel, and the deadline for the channel to be closed.
 - Implement a multi-signature requirement for creating the channel, which will ensure that both parties need to sign off on the creation of the channel.
