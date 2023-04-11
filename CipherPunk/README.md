@@ -12,9 +12,10 @@ Read article "this repository/cipherpunk/05-ecc.md" (closing the end of article)
 #### Fun 2
 Goldbach Conjecture
 - p, q : prime numbers
-- C = p + q 
+- C = p + q (goldbach experssion)
 - p ≼ q
   - if `C` made by to different prime constructor, when `C` is safe or not in cryptography?
   - p1 + q1 = C => p2 + q2 = C
   - this is happend, but we use multiply for cryptography, there is can a chance for this conjecture?
   - answer is yes, but in big numbers this chance is to low.
+- conjecture: each generated `C` if divided by 2 and the answer is even, have `q` number biggest in the middle. candidate number ever is a prime, so we can calculate for this conjecture to find more 'equation' to create `C` generator.
