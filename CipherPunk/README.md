@@ -21,9 +21,9 @@ Goldbach Conjecture
   - 
 conjecture: each generated `C` if divided by 2 and the answer is even, have `q` number biggest in the middle. candidate number ever is a prime, so we can calculate for this conjecture to find more 'equation' to create `C` generator.\
 In fact if we check the `C` and that number made by multiply of a sequence of primes, then the generators can be more then of 2 numbers. (look like: aaron number, need more then 3 primes in each generator. while the crossed number happend)
-- a = 2*3*5*7 (210)
-- b = 5*7*11 (385)
-- z = 2*3*5*7*11 (2310)
+- a = 2 * 3 * 5 * 7 (210)
+- b = 5 * 7 * 11 (385)
+- z = 2 * 3 * 5 * 7 * 11 (2310)
 - c = a * b (80850)
 - then c => x * z !!!!
-- x = 5*7
+- x = 5 * 7
