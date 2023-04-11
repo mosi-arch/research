@@ -18,4 +18,5 @@ Goldbach Conjecture
   - p1 + q1 = C => p2 + q2 = C
   - this is happend, but we use multiply for cryptography, there is can a chance for this conjecture?
   - answer is yes, but in big numbers this chance is to low.
+  - 
 conjecture: each generated `C` if divided by 2 and the answer is even, have `q` number biggest in the middle. candidate number ever is a prime, so we can calculate for this conjecture to find more 'equation' to create `C` generator.
