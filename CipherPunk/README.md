@@ -1,5 +1,5 @@
 #### Personal comment:
-All of this "perfect encryption patterns" as soon be deciphering by "ai".\
+in some cases we see: All of this "perfect encryption patterns" as soon be deciphering by "ai".\
 Between 2030 to 2038 the machin's have been make/generate/creating the rules, and not human!\
 So be yourself and better then each of your handmades (ai's), because human kind have the experiance of real world and real life.\
 Make best "encryption patterns" like our ancesters (they made the language, first cipher algorithm).\
@@ -19,4 +19,5 @@ Goldbach Conjecture
   - this is happend, but we use multiply for cryptography, there is can a chance for this conjecture?
   - answer is yes, but in big numbers this chance is to low.
   - 
-conjecture: each generated `C` if divided by 2 and the answer is even, have `q` number biggest in the middle. candidate number ever is a prime, so we can calculate for this conjecture to find more 'equation' to create `C` generator.
+conjecture: each generated `C` if divided by 2 and the answer is even, have `q` number biggest in the middle. candidate number ever is a prime, so we can calculate for this conjecture to find more 'equation' to create `C` generator.\
+In fact if we check the `C` and that number made by multiply of a sequence of primes, then the generators can be more then of 2 numbers. (look like: aaron number)
