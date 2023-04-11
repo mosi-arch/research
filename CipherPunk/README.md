@@ -27,3 +27,4 @@ In fact if we check the `C` and that number made by multiply of a sequence of pr
 - c = a * b (80850)
 - then c => x * z !!!!
 - x = 5 * 7
+- so `C` = 2 * 3 * 5^2 * 7^2 * 11
