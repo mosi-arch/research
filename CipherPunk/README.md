@@ -31,3 +31,6 @@ In fact if we check the `C` and that number made by multiply of a sequence of pr
 - then c => x * z !!!!
 - x = 5 * 7
 - so `C` = 2 * 3 * 5^2 * 7^2 * 11
+
+**In Memories**: this example years ago (Sep 01 2003) before my calculations made, used in similar mathematics about the 'guess next prime number' by [Farideh Firoozbakht](https://oeis.org/wiki/User:Farideh_Firoozbakht)\
+[A037153](https://oeis.org/A037153)		`a(n) = p-n!`, where `p` is the `smallest prime > n!+1`.
