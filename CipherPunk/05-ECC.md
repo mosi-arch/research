@@ -77,3 +77,7 @@ This implementation of ECC (Elliptic Curve Cryptography) formula.
 
 this is the ecc revers engineering!\
 in fact you can create a 4096 encryption machine less then 100$
+
+**Conjectur**: elliptic curve is a 2d of inside the torus. explain that to your-self by imagin the shape in 3dimensions!\
+This conjecture is a *theorem* asap!\
+The way to create un-crackable cryptography...
