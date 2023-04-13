@@ -252,6 +252,12 @@ function getPrimeNumbers(pi) {
 }
 ```
 
+#### Shorthand YCombinator
+example in javascript
+```js
+const Y = (f => f(f))(f => (...args) => f(f)(...args));
+```
+
 ---
 
 ## Personal comment:
