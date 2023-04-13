@@ -89,7 +89,7 @@ In Ethereum, HD wallets typically use the "m/44'/60'/0'/0" derivation path. The 
 
 Now, let's do the math. The first index in the path, "44'", is a hardened index, which means it will be used to derive a private key. The second index, "60'", is also a hardened index, so it will be used to derive another private key. The remaining indices, "0'/0", are non-hardened indices that are used to derive the Ethereum account and address respectively.
 
-To calculate these keys, we start with the master seed, which is a random 128-bit to 256-bit number derived from the mnemonic phrase. We then use a key-derivation function (KDF) to deterministically generate child keys from the parent key. The KDF used in BIP32 is called HMAC-SHA512, which is a cryptographically secure hash function.
+To calculate these keys, we start with the master seed, which is a random 128-bit to 256-bit number derived from the mnemonic phrase. We then use a key-derivation function (KDF) to deterministically generate child keys from the parent key. The [KDF](https://github.com/mosi-arch/research/blob/main/CipherPunk/06-Hmac-Kdf.md) used in BIP32 is called [HMAC-SHA512](https://github.com/mosi-arch/research/blob/main/CipherPunk/06-Hmac-Kdf.md), which is a cryptographically secure hash function.
 
 To derive the first child key at index "44'", the KDF takes the master seed and generates a 512-bit value. This value is split into two halves, which are then used as the private key and chain code of the new key. The private key is then used to derive the second child key at index "60'", following the same process.
 
