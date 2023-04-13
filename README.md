@@ -12,9 +12,9 @@ Disclaimer: This repository like others created for teaching purposes. So make y
 |||
 | Supply Chain [here](https://github.com/mosi-arch/research/tree/main/SupplyChain) | [- Incoterms issue](https://github.com/mosi-arch/research/blob/main/SupplyChain/01-incoterms-issue.md) <br /> [- Incoterms FOB](https://github.com/mosi-arch/research/blob/main/SupplyChain/02-incoterms-FOB.md) <br /> [- Incoterms CFR](https://github.com/mosi-arch/research/blob/main/SupplyChain/03-incoterms-CFR.md) <br /> [- Incoterms CIF](https://github.com/mosi-arch/research/blob/main/SupplyChain/04-incoterms-CIF.md) <br /> [- Incoterms FAS](https://github.com/mosi-arch/research/blob/main/SupplyChain/05-incoterms-FAS.md) <br /> [- Incoterms roles](https://github.com/mosi-arch/research/blob/main/SupplyChain/06-incoterms-roles-example.md) <br /> [- Proof of Coverage (POC)](https://github.com/mosi-arch/research/blob/main/SupplyChain/07-proof-of-coverage.md) <br /> [- Proof of Exist (POE)](https://github.com/mosi-arch/research/blob/main/SupplyChain/08-proof-of-exist.md) |
 
-| Title | Subject |
+| | |
 |----|----|
-| Documents [here](https://github.com/mosi-arch/research/tree/main/Documents) | [- Article: Random numbers in Pi](https://github.com/mosi-arch/research/blob/main/Documents/Article%20on%20random%20numbers%20and%20pi%20algorithm.pdf) |
+| Documents [here](https://github.com/mosi-arch/research/tree/main/Documents) | PDF format for some of articles |
 
 ---
 
