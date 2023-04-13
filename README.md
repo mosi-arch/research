@@ -1,4 +1,4 @@
-# RDisclaesearch
+# Research
 Researches about mathematical and blockchain industry, published on my social medias. Researches fully GNU-GPL 3\
 Disclaimer: This repository like others created for teaching purposes. So make your own research after reading these articles.
 
