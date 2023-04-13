@@ -1,8 +1,8 @@
-HMAC - KDF
+## HMAC - KDF
 
-A Key Derivation Function (KDF) is a cryptographic algorithm used to derive one or more keys from a single secret value, such as a password or a seed. KDFs are designed to be computationally expensive, which makes them more resistant to brute-force attacks and other methods of cryptographic analysis.
+A **Key Derivation Function (KDF)** is a cryptographic algorithm used to derive one or more keys from a single secret value, such as a password or a seed. KDFs are designed to be computationally expensive, which makes them more resistant to brute-force attacks and other methods of cryptographic analysis.
 
-The HMAC (Keyed-Hash Message Authentication Code) algorithm is a specific type of KDF that is used to verify the integrity and authenticity of messages. HMAC is based on a hash function, which generates a fixed-size output from a variable-length input. The hash function used in HMAC is typically a secure hash function like SHA-256 or SHA-512.
+The **HMAC (Keyed-Hash Message Authentication Code)** algorithm is a specific type of KDF that is used to verify the integrity and authenticity of messages. HMAC is based on a hash function, which generates a fixed-size output from a variable-length input. The hash function used in HMAC is typically a secure hash function like SHA-256 or SHA-512.
 
 Here's the mathematical equation for HMAC:
 
