@@ -1,4 +1,5 @@
 ## Bip-39
+[bip-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
 Generating a wallet seed phrase is an important step in creating a cryptocurrency wallet. There are many libraries in JavaScript that can help you generate a seed phrase.
 
@@ -31,7 +32,7 @@ Here's how the code works:
 
 ---
 
-## HD-Wallet
+## HD-Wallet - [bip-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
 `bip39` is a JavaScript library that provides functionality for generating mnemonics that are used to generate a deterministic hierarchy of keys. It implements the BIP-39 standard, which provides methods for converting a random sequence of bytes into a human-readable list of words that can be used as a seed phrase for wallets.
 
