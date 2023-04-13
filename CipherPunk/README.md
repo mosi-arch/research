@@ -1,13 +1,19 @@
 #### Personal comment:
-in some cases we see: All of this "perfect encryption patterns" as soon be deciphering by "ai".\
+In some cases we see: All of this "perfect encryption patterns" as soon be deciphering by "ai".\
 Between 2030 to 2038 the machin's have been make/generate/creating the rules, and not human!\
 So be yourself and better then each of your handmades (ai's), because human kind have the experiance of real world and real life.\
 Make best "encryption patterns" like our ancesters (they made the language, first cipher algorithm).\
 Looking around the world, watching patterns, pi number, chaos theory, phi totient, ... the real world have many algorithm for growing.
 
+Remember to using `x mod 7`
+
+---
+
 #### Fun 1
 The turin machine implemented the feynman machine in large variables. Feynman have 3 clock-gear. In fact, Turin built a machine using the idea of Feynman to reverse the engineering of the enigma machine.\
 Read article "this repository/cipherpunk/05-ecc.md" (closing the end of article) for more information.
+
+#
 
 #### Fun 2
 Goldbach Conjecture
