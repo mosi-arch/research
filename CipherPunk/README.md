@@ -11,7 +11,9 @@ Remember to using `x mod 7`
 
 #### Fun 1
 The turin machine implemented the feynman machine in large variables. Feynman have 3 clock-gear. In fact, Turin built a machine using the idea of Feynman to reverse the engineering of the enigma machine.\
-Read article "this repository/cipherpunk/05-ecc.md" (closing the end of article) for more information.
+Read article "this repository/cipherpunk/05-ecc.md" (closing the end of article) for more information.\
+Turin talking about calculatible numbers, such as part of algebra or not algebra(pi, e) exist because we can calculate. Mean: we know how to break the code of the number or not, but we can use in our equetions!\
+So Turin machine is a calculator.
 
 #
 
