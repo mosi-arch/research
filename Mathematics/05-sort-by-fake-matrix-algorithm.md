@@ -109,3 +109,8 @@ console.log(sortedItems); // Outputs ['1', '2', '3', '4', '5']
 In this example, we start by defining the Y Combinator to create a recursive function. We then define the `sortCoords` function, which takes a list of coordinates and sorts them based on their x-coordinate using a merge sort algorithm. After sorting, we update the y-coordinates to reflect the new order.
 
 To represent each item as a coordinate, we map each item in the list to its corresponding coordinate. We then call the `sortCoords` function to sort the list of coordinates based on the x-axis and update the y-coordinates. Finally, we map the sorted list of coordinates back to the original list of items.
+
+#
+
+This method power coordanated by other combined algorithm inside.\
+Some times `O log x(n)`, `O n log x(n)` <-- x representing the combined algorithms.
