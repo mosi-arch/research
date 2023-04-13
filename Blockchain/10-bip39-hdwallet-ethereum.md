@@ -85,11 +85,11 @@ A hardened index is represented by "m/i'", where the "m" indicates the root key 
 
 On the other hand, a non-hardened index is represented by "m/i", and can be derived using only the parent key's public key. These keys are less secure since they can be calculated using only public information.
 
-In Ethereum, HD wallets typically use the "m/44'/60'/0'/0" derivation path. The "44'" index represents the BIP44 standard, which is a commonly used hierarchical deterministic key specification. The "60'" index indicates that we are using the Ethereum network, and the "0'/0" indices are used to indicate the index of the account and address to derive.
+In Ethereum, HD wallets typically use the "m/44'/60'/0'/0" derivation path. The "44'" index represents the [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) standard, which is a commonly used hierarchical deterministic key specification. The "60'" index indicates that we are using the Ethereum network, and the "0'/0" indices are used to indicate the index of the account and address to derive.
 
 Now, let's do the math. The first index in the path, "44'", is a hardened index, which means it will be used to derive a private key. The second index, "60'", is also a hardened index, so it will be used to derive another private key. The remaining indices, "0'/0", are non-hardened indices that are used to derive the Ethereum account and address respectively.
 
-To calculate these keys, we start with the master seed, which is a random 128- to 256-bit number derived from the mnemonic phrase. We then use a key-derivation function (KDF) to deterministically generate child keys from the parent key. The KDF used in BIP32 is called HMAC-SHA512, which is a cryptographically secure hash function.
+To calculate these keys, we start with the master seed, which is a random 128-bit to 256-bit number derived from the mnemonic phrase. We then use a key-derivation function (KDF) to deterministically generate child keys from the parent key. The KDF used in BIP32 is called HMAC-SHA512, which is a cryptographically secure hash function.
 
 To derive the first child key at index "44'", the KDF takes the master seed and generates a 512-bit value. This value is split into two halves, which are then used as the private key and chain code of the new key. The private key is then used to derive the second child key at index "60'", following the same process.
 
