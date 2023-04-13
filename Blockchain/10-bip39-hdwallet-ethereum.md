@@ -1,6 +1,6 @@
 ## Bip-39
 
-Generating a wallet seed phrase is an important step in creating a cryptocurrency wallet. There are many libraries in JavaScript that can help you generate a seed phrase. However, I'm not sure how the Y Combinator would be useful in this scenario since it's a recursion concept that's not directly related to random number generation.
+Generating a wallet seed phrase is an important step in creating a cryptocurrency wallet. There are many libraries in JavaScript that can help you generate a seed phrase.
 
 Either way, here's an example of how to generate a 12-word seed phrase using the popular `bip39` library in JavaScript:
 
