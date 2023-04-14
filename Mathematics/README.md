@@ -13,7 +13,7 @@ Bitcoin mining never end up: each 4 years the mining result halved.
 
 ### In Euclidean mathematics: 
 This equation means that every 4-year period, the radius of the circle is added to the previous diameter.\
-That is, pi plus tao is equal to the new circle. The distance between you and the destination increases.\
+That is, pi **π** plus tao **τ** is equal to the new circle. The distance between you and the destination increases.\
 In the second dimension, the third dimension of this equation is different.
 
 ### In linear algebra: 
