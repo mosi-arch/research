@@ -19,3 +19,7 @@ In the second dimension, the third dimension of this equation is different.
 ### In linear algebra: 
 In each 4-year period, you travel half the distance of the previous period.\
 A line by width *21.000.000* each period half of the distance.
+
+#
+
+- **Conjecture**: π^4 near a integer number (not anymore a real number)
