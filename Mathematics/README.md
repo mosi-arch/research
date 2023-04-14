@@ -24,5 +24,8 @@ A line by width *21.000.000* each period half of the distance.
 #
 
 #### Simple equetion
-n = how many years\
-21000000 * (1/2)^(n) = 0
+Point of View: satoshies * (0.5 ^ n) = 0\
+Build a loop and compute the cycles, each cycle * 4 = how many years.\
+n represnting the cycles.
+
+- 21000000 * (1/2)^(n) = 0
