@@ -62,7 +62,7 @@ Therefore, there is no value of n for which `210000 * 0.5 ^ n = 0`.
 const fs = require('fs');
 
 function calculateLTFiftyPct(n) {
-  return 21000000 * Math.pow(0.5, n); // 21000000 for btc, for including satoshi use: 21000000x10000000
+  return 21000000 * Math.pow(0.5, n); // 21000000 for btc, for including satoshi use: 21000000x10000000 (21e13)
 }
 
 let answer = [];
