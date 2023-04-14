@@ -55,6 +55,7 @@ Therefore, there is no value of n for which `210000 * 0.5 ^ n = 0`.
 
 #### Example JavaScript code:
 - this code generate a text file and show you 1000 period (each one is 4 years)
+- generated file [here](https://github.com/mosi-arch/research/blob/main/Documents/BTC-After_4000Years.txt)
 
 ```js
 // nodejs
