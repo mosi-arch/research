@@ -33,3 +33,21 @@ n represnting the cycles.
 
 P.S: remember to calculate Satoshies (0.00000001 BTC)\
 1 BTC = 1000000000 satoshi
+
+#
+
+#### Logic of Equetion
+To solve this equation for 'n', we can use logarithms.\
+First, we can simplify the left side of the equation by dividing both sides by '210000' (210000 is short hand number for present 21Million):\
+`0.5^n = 0/210000` 
+
+'0/210000' is equal to '0' **:) !**, so we can rewrite the equation as:\
+`0.5^n = 0` 
+
+Now we can take the logarithm base '0.5' of both sides:\
+`log_0.5(0.5^n) = log_0.5(0)` 
+
+The right side of the equation is undefined, so the equation has no solution.\
+Therefore, there is no value of n for which `210000 * 0.5 ^ n = 0`.
+
+:)
