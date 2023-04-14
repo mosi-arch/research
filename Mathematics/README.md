@@ -22,4 +22,4 @@ A line by width *21.000.000* each period half of the distance.
 
 #
 
-- **Conjecture**: π^4 near a integer number (not anymore exactly a real number)
+- **Conjecture**: π^4 near a integer number (not anymore exactly a real number) [π^π^π^π^π]
