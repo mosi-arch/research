@@ -36,7 +36,7 @@ P.S: remember to calculate Satoshies (0.00000001 BTC)\
 
 #
 
-## Logic of Equetion
+## Logic of Equetion [ theorem ]
 To solve this equation for 'n', we can use logarithms.\
 First, we can simplify the left side of the equation by dividing both sides by '210000' (210000 is short hand number for present 21Million):\
 `0.5^n = 0/210000` 
