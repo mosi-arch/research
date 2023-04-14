@@ -21,4 +21,6 @@ In the second dimension, the third dimension of this equation is different.
 In each 4-year period, you travel half the distance of the previous period.\
 A line by width *21.000.000* each period half of the distance.
 
+#
 
+21000000 * (1/2)^(n) = 0
