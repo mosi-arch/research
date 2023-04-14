@@ -51,3 +51,39 @@ The right side of the equation is undefined, so the equation has no solution.\
 Therefore, there is no value of n for which `210000 * 0.5 ^ n = 0`.
 
 :)
+
+#### Example JavaScript code:
+- this code generate a text file and show you 1000 period (each one is 4 years)
+
+```js
+const fs = require('fs');
+
+function calculateLTFiftyPct(n) {
+  return 21000000 * Math.pow(0.5, n);
+}
+
+let answer = [];
+
+for (let n = 1; n <= 1000; n++) {
+  let lt = calculateLTFiftyPct(n);
+  if (lt > 0) {
+    answer.push(lt);
+  } else {
+    break; // break out of loop if lt <= 0
+  }
+}
+
+fs.writeFileSync('answer.txt', answer.join('\n'));
+console.log('Answer saved to answer.txt');
+```
+
+#### example for period 1 to 1000:
+- Period 1: 10500000
+- Period 2: 5250000
+- Period 3: 2625000
+- ...
+- Period 998: 7.839414395427039e-294
+- Period 999: 3.919707197713519e-294
+- Period 1000: 1.9598535988567596e-294
+
+Each period is 4 years, so we calculating 4000 years!!!
