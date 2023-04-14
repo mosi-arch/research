@@ -23,5 +23,6 @@ A line by width *21.000.000* each period half of the distance.
 
 #
 
-n = how many years
+#### Simple equetion
+n = how many years\
 21000000 * (1/2)^(n) = 0
