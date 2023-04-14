@@ -12,10 +12,10 @@ translate: I was walking, I saw him sitting, I said, let's go to dance, I saw hi
 This is largest ever language (words).
 
 Did you know:
-- Languages made by mathematical and unique encode algorithm.
+- **Languages made by mathematical and unique encode algorithm**.
 - Farsi the second language of iran history, and made over 100 years before the latin.
-- Kharazmi make "algorithm" or "algebra" a scientist from iran.
+- Kharazmi make "**algorithm**" or "**algebra**" a scientist from iran.
 
-Cheers for first generation of 'CIPHER PUNKS'
+Cheers for first generation of '**CIPHER PUNKS**'
 
 #language #cryptography #cipherpunks #mathematics #algorithms
