@@ -30,3 +30,6 @@ each cycle * 4 = how many years.\
 n represnting the cycles.
 
 - 21000000 * (1/2)^(n) = 0
+
+P.S: remember to calculate Satoshies (0.00000001 BTC)\
+1 BTC = 1000000000 satoshi
