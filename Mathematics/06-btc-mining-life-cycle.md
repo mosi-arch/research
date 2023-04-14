@@ -81,15 +81,15 @@ console.log('Answer saved to answer.txt');
 ```
 
 #### example for period 1 to 1000:
-- Period 1: 10500000
-- Period 2: 5250000
-- Period 3: 2625000
+- Period 1: `10500000`
+- Period 2: `5250000`
+- Period 3: `2625000`
 - ...
-- Period 24: 1.2516975 BTC
+- Period 24: `1.2516975` BTC
 - ...
-- Period 998: 7.839414395427039e-294
-- Period 999: 3.919707197713519e-294
-- Period 1000: 1.9598535988567596e-294
+- Period 998: `7.839414395427039e-294`
+- Period 999: `3.919707197713519e-294`
+- Period 1000: `1.9598535988567596e-294`
 
 Each period is 4 years, so we calculating 4000 years!!!\
 After period 24 (24 x 4 years) the number of mining near the 1, after that we have satoshies.\
