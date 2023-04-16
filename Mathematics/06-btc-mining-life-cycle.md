@@ -99,7 +99,7 @@ Maybe community make fraction on satoshies, meybe not. Anyway the equation show 
 ---
 
 ### Fun fact!
-How to "lord Satoshi Nakamoto" calculate the limitation of each period?\
-equation is: **∞∑(n=0) 1/(2^n)**\
+How "Lord Satoshi Nakamoto" calculated the limitation of each period?\
+Equation is: **∞∑(n=0) 1/(2^n)**\
 **|x| = 1 + 1/2 + 1/4 + 1/8 + ... = 2** (limit is 2)\
-So each period hardest 2 times to the perevius period!!!
+So each period hardest 2 times from the previus period!!!
