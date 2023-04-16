@@ -95,3 +95,11 @@ Each period is 4 years, so we calculating 4000 years!!!\
 After period 24 (24 x 4 years) the number of mining near the 1, after that we have satoshies.\
 The Period 1000 show us a big number, but that more then '0' [1.959854e-294] but satoshi is 0.00000001. so calculate yourself and watch the answer!\
 Maybe community make fraction on satoshies, meybe not. Anyway the equation show us BTC mining can run forever :)
+
+---
+
+### Fun fact!
+How to "lord Satoshi Nakamoto" calculate the limitation of each period?\
+equation is: ∞∑(n=0) 1/(2^n)\
+x = 1 + 1/2 + 1/4 + 1/8 + ... = 2\
+So each period hardest 2 times to the perevius period!!!
