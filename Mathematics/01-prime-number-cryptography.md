@@ -2,7 +2,7 @@
 
 imagin a clock:\
 ? a clock 12 nums
-```
+```js
 a-> 7-1=6
 b-> 13-1=12
 c-> 6*12=72
@@ -20,7 +20,7 @@ example pseudo
 - - a=p^13
 - - b=q^17
 - - A=b^13 && B=a^17 == same number
-```
+```js
 a = alice p^primeNumX
 b = bob q^primeNumY
 a send to bob <--> b send to alice
@@ -36,7 +36,7 @@ this equition safe by e^N mod n
 hash(a) generating by hash(b), and can decipher hash(b) by using revert function from hash(a)
 
 #### problem
-```
+```py
 ___________________
 |hash(a) | hash(b)|
 ___________________
@@ -51,7 +51,7 @@ ___________________________________
 ```
 
 #### solution (key = random prime number, two side accepted that)
-```
+```py
 ___________________
 |hash(a) | hash(b)|
 ___________________
@@ -75,7 +75,7 @@ for more informatio, using this in "diffie hellman". in messaging purposes on no
 
 ## Method 3 = zk-proof of whisper statement?
 problem: how to accept "n"
-```
+```py
 ____________________________________________________
 n = random prime number, accept by two sides
 alice = a	->	proof = g*(a|b) % n
@@ -87,7 +87,7 @@ answer: using "ratchet - hash(a)" solution and in/on hashed conversation.
 - g = generator area (where code publicly run, and "n" somewhere in the edge of this area)
 - "n" position into "g" is LFSR driven (random initial state, unlimited chance to generate random by hirarchical shifting to the right and replace to the left by using xor pattern)
 - LFSR presentation code in the end of this document
-```
+```py
 ________________________________
 | n1        | n3               |
 ________________________________
@@ -143,7 +143,7 @@ but this type of solution is like a : **A donkey who is burdened with books and 
 #### psuedo code:
 random prime number x times to random prime number y = unique number to generate public key as z\
 the true calculation is the length. so we use big numbers like 40 digits
-```
+```js
 x = primeGeneratorRandom(48 digit)
 y = primeGeneratorRandom(52 digit)
 // r is like gpg
