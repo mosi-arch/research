@@ -105,4 +105,5 @@ Equation is: **∞∑(n=0) 1/(2^n)**\
 So each period hardest 2 times from the previus period!!!
 
 - In "Riemann zeta function" 'n=1' -> `ς(s) = ∞∑(n=1) ...` this is make same value like satoshi sequence, but for create 'life cycle' not for limitation. because this equetion generative and interactive :)
+  - the answer of this equetion is '(-1)/12'
   - euler proof this interactive '(s)' by -> 'pi/6'
