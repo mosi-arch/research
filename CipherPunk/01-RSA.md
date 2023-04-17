@@ -17,14 +17,14 @@ a message with the intended recipient's public key which only the recipient is a
 2. Encryption: 
    - Convert the message into a number 'm' 
    - Apply the following rule:  
-```
+```py
 c = m^e(mod n)
 ```
 where c is the encrypted message (ciphertext) 
 
 3. Decryption: 
    - Apply the following rule:  
-```
+```py
 m = c^d(mod n)
 ```
 where m is the original message (plaintext) 
@@ -39,7 +39,7 @@ where m is the original message (plaintext)
            
 - Private key: (d, n)
       where d is the private exponent
-```
+```py
 d ≡ e^-1 (mod Φ(n))
 Φ(n) = (p-1)(q-1)
 ```
