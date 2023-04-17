@@ -258,6 +258,11 @@ example in javascript
 const Y = (f => f(f))(f => (...args) => f(f)(...args));
 ```
 
+#
+
+## Tail Recursive
+Best solution for save memory on recursion is the "Tail Recursive solution". example [here](https://github.com/mosi-sol/live-contracts-s4/blob/4797db3417985e4433b73fb884fd160e9e6b89fd/09-%20Factorial/Factorial.sol#L43) 
+
 ---
 
 ## Personal comment:
