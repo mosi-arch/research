@@ -1,7 +1,7 @@
 # Sort algorithm by fake matrix
 ### Sorting by use y-axis (Ordering by use y axis)
 
-To order a list of items by using the y-axis, we need to first represent each item in the list as a coordinate on a 2D plane. In this case, the x-axis represents the length of the item and the y-axis represents the unique position of the item in the list. For example, given the list "14325", we can represent it as the following coordinates:
+To order a list of items by using the y-axis, we need to first represent each item in the list as a coordinate on a 2D plane. In this case, the x-axis represents the length of the item and the y-axis represents the unique position of the item in the list. For example, given the list "`14325`", we can represent it as the following coordinates:
 
 1 - (1, 1)\
 4 - (1, 2)\
