@@ -113,4 +113,4 @@ To represent each item as a coordinate, we map each item in the list to its corr
 #
 
 This method power coordanated by other combined algorithm inside.\
-Some times `O log x(n)`, `O n log x(n)` <-- x representing the combined algorithms.
+Some times `O log x(n)`, `O n log x(n)` <-- x representing the combined sort algorithms.
