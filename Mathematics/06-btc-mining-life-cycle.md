@@ -104,4 +104,4 @@ Equation is: **∞∑(n=0) 1/(2^n)**\
 **|x| = 1 + 1/2 + 1/4 + 1/8 + ... + 1/(2^n) = 2** (limit is 2)\
 So each period hardest 2 times from the previus period!!!
 
-- In "Riemann zeta function" 'n=1' -> `∞∑(n=1) ...` this is make same value like satoshi sequence, but for create 'life cycle' not for limitation
+- In "Riemann zeta function" 'n=1' -> `ς(s) = ∞∑(n=1) ...` this is make same value like satoshi sequence, but for create 'life cycle' not for limitation
