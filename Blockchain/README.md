@@ -28,3 +28,8 @@ print(f'0x{crypto}')
 ```
 
 **Enjoy the encryption ERA...**
+
+In this ERA you have to learn extra posible information for living safe.\
+The first important thing before the encryption/decryption is: **Huffman Information Theroy**\
+Example: `I(x) = log2(1/(P(x))) = -log2 P(x)`\
+In this theory you must to know how much BIT's can transfer & translate.
