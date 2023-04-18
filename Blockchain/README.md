@@ -2,7 +2,7 @@
 How Ancester CipherPunk's encrypt messages?\
 Encrypt look like ceasar:
 ```py
-# Pyton example
+# Python example
 msg = input("message: ")
 
 cipher ={
@@ -27,4 +27,4 @@ print(f'0x{crypto}')
 # input "1020 3040 50 60" - output  '0xopip&upyp&tp&rp'
 ```
 
-Enjoy the encryption ERA...
+**Enjoy the encryption ERA...**
