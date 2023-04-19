@@ -15,6 +15,7 @@ Disclaimer: This repository like others created for teaching purposes. So make y
 | | |
 |----|----|
 | Documents [here](https://github.com/mosi-arch/research/tree/main/Documents) | PDF format for some of articles |
+| Clean Data-set [herte](https://github.com/mosi-arch/research/tree/main/DataSet) | BTC - daily & hourly |
 
 ---
 
