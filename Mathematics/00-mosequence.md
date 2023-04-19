@@ -39,3 +39,7 @@ def showBitLength():
 
 showBitLength()
 ```
+
+#
+
+Download [Mosequence](https://github.com/mosi-arch/research/blob/main/Documents/mosequence.txt).txt from '0' to '10000'.
