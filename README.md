@@ -19,7 +19,7 @@ Disclaimer: This repository like others created for teaching purposes. So make y
 
 ---
 
-There is no "proof by contradiction" in blockchain technology. Reason is: blockchain is a Live hero!\
+There is no "proof by contradiction" in blockchain technology. Reason is: blockchain is a Living hero!\
 So "lord Satoshi Nakamoto" is the prophet of future.
 
 - GNU-GPL3 [License](https://github.com/mosi-arch/research/blob/main/LICENSE)
