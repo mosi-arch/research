@@ -1,4 +1,5 @@
 # BTC Mining Life Cycle
+When "zeno" tell a story like a "paradox"!
 
 ### Mathematics behind the (POW in Bitcoin)
 Bitcoin mining never end up: each 4 years the mining result halved. 
