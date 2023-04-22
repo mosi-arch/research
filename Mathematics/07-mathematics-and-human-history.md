@@ -38,3 +38,4 @@ Quand un membre a été blessé - les autres membres n'ont pas été épargnés
 #history #humanity #mathematics
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Babylonian_numerals.svg/400px-Babylonian_numerals.svg.png)
+the number 60 is a thin vertical square.
