@@ -6,7 +6,7 @@ Human civilization is more intertwined than you think.
 
 The famous Iranian poet Saadi has a poem that in the entrance of the United Nations:\
 Humans are members of one body - which are one gem in creation\
-When one member hurt -  the other members were not spared\
+When one member hurt -  the other members were not spared
 
 ### French:
 L'une des premières lettres d'écriture inventées par les humains était les lettres d'écriture cunéiformes.
@@ -16,7 +16,7 @@ La civilisation humaine est plus imbriquée que vous ne le pensez.
 
 Le célèbre poète iranien Saadi a un poème qui, à l'entrée des Nations Unies :\
 Les humains sont membres d'un seul corps - qui est un joyau de la création\
-Quand un membre a été blessé - les autres membres n'ont pas été épargnés\
+Quand un membre a été blessé - les autres membres n'ont pas été épargnés
 
 ### Persian/Farsi
 یکی از اولین حروف نوشتاری ابداع بشر، حروف نوشتاری میخی بوده است.
