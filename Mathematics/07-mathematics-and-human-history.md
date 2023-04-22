@@ -36,3 +36,5 @@ Quand un membre a été blessé - les autres membres n'ont pas été épargnés
 چو عضوی به درد آورد روزگار - دگر عضوها را نماند قرار
 
 #history #humanity #mathematics
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Babylonian_numerals.svg/400px-Babylonian_numerals.svg.png)
