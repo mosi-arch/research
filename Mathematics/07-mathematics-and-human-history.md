@@ -20,7 +20,7 @@ Le célèbre poète iranien Saadi a un poème qui, à l'entrée des Nations Unie
 Les humains sont membres d'un seul corps - qui est un joyau de la création\
 Quand un membre a été blessé - les autres membres n'ont pas été épargnés
 
-### Persian/Farsi
+### Persian/Farsi:
 یکی از اولین حروف نوشتاری ابداع بشر، حروف نوشتاری میخی بوده است.
 
 آیا میدانستید اعداد در ۴۰۰۰ تا ۲۵۰۰ سال پیش در "فلات ایران" بر پایه۶۰ بوده اند؟
