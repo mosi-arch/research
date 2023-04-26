@@ -34,6 +34,8 @@ There are many other types of ZKP algorithms with different properties and use c
 - Protecting the storage or Sensitive data
 - Profitable search time from "T=O(n)" to "T=O(1)=1"
 
+> **Note**: `e^n = x` = `O(n)`. blockchain = compute power, so first calculate to hashing, then search directly to the hash target!
+
 #### Example Solidity : [zk-signature](https://github.com/mosi-arch/archive-sol/tree/main/Simulations/ZK-Signature)
 
 #### References:
