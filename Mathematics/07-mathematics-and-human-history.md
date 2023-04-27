@@ -43,10 +43,10 @@ the number 60 is a thin vertical square.
 ---
 
 ### Why human love Base10 for counting?
-111/3 = 222/6 = 333/9 == 37.... 999/27=37
+111/3 = 222/6 = 333/9 = 444/12 = 555/15 = 666/18 = 777/21 = 888/24 = 999/27 = 37
 
 #Theorem :
-- What happened? 111/1+1+1 = 111/3 = 37 AND [3 + 7 = 10]
+- What happened? `111/1+1+1 = 111/3 = 37` AND [3 + 7 = 10]
 - From 1 to 9 this equation answer is 37.
 - The Ancestors love to playing by numbers, they know about Base3, Base6, Base12, Base60, But choosing Base10 for helping next generations.
 
