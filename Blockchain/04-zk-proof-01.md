@@ -34,7 +34,7 @@ There are many other types of ZKP algorithms with different properties and use c
 - Protecting the storage or Sensitive data
 - Profitable search time from "T=O(n)" to "T=O(1)=1"
 
-> **Note**: The mindset of some programmers is: `e^n = x` = `O(n)`. This is for non-large-disterbuted apps like windows app. **Blockchain = compute power", so first calculate to hashing, then search directly to the hash target! Also `O(1)` when you search in blockchain and similar app. this mean "saving power & energy". example: compare different product.
+> **Note**: The mindset of some programmers is: `e^n = x` = `O(n)`. This is for non-large-disterbuted apps like windows app. **Blockchain = compute power**, so first calculate to hashing, then search directly to the hash target! Also `O(1)` when you search in blockchain and similar app. this mean "saving power & energy". example: compare different product.
 
 #### Example Solidity : [zk-signature](https://github.com/mosi-arch/archive-sol/tree/main/Simulations/ZK-Signature)
 
