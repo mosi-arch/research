@@ -39,3 +39,16 @@ Quand un membre a été blessé - les autres membres n'ont pas été épargnés
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Babylonian_numerals.svg/400px-Babylonian_numerals.svg.png)
 the number 60 is a thin vertical square.
+
+---
+
+### Why human love Base10 for counting?
+111/3 = 222/6 = 333/9 == 37.... 999/27=37
+
+#Theorem :
+- What happened? 111/1+1+1 = 111/3 = 37 AND [3 + 7 = 10]
+- From 1 to 9 this equation answer is 37.
+- The Ancestors love to playing by numbers, they know about Base3, Base6, Base12, Base60, But choosing Base10 for helping next generations.
+
+37 is beautiful ever number, divide 37 to 1 to 36 and watching the answers. (pandelerium)\
+#mathematics #love #numbers
