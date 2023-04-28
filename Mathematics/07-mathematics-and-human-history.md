@@ -52,3 +52,20 @@ the number 60 is a thin vertical square.
 
 37 is beautiful ever number, divide 37 to 1 to 36 and watching the answers. (pandelerium)\
 #mathematics #love #numbers
+
+---
+
+Centuries ago:
+- Base 60 used by Australians.
+- Denmark, Norway and the island used Base60. (valhalla is big like base60)
+- South America used Base60. (Maya loves math)
+- Before the first (Persian) empire in the Middle East, Base60 was used in mathematics.
+
+How did they make Base60?
+- Base 12 * 5
+
+You see the math used in nature by humans anywhere is 12th grade.\
+**Year, season, hour**...
+
+But in these recent centuries we use base10, just for fingers to count!\
+The essential beauty of life is that the mindset underlies everything and the philosophy of mathematics.
