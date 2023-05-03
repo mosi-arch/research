@@ -95,11 +95,11 @@ example:
 ---
 
 ### Base10 to Base60
-The digits used in base 60 are "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", where the first 10 digits represent the numbers 0-9, the next 26 digits represent the letters A-Z (in uppercase), and the last 26 digits represent the letters a-z (in lowercase).
+The digits used in base 60 are "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYabcdefghijklmnopqrstuvwxy", where the first 10 digits represent the numbers 0-9, the next 25 digits represent the letters A-Y (in uppercase), and the last 25 digits represent the letters a-y (in lowercase).
 
 ```py
 def base10_to_base60(num):
-    digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYabcdefghijklmnopqrstuvwxy"
     result = ""
     while num > 0:
         remainder = num % 60
