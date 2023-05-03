@@ -69,3 +69,25 @@ You see the math used in nature by humans anywhere is 12th grade.\
 
 But in these recent centuries we use base10, just for fingers to count!\
 The essential beauty of life is that the mindset underlies everything and the philosophy of mathematics.
+
+---
+
+### Base10 to Base12
+```py
+def base10_to_base12(num):
+    digits = "0123456789xe"
+    result = ""
+    while num > 0:
+        remainder = num % 12
+        result = digits[remainder] + result
+        num //= 12
+    return result if result else "0"
+```
+x = 10\
+e = 11
+
+example:
+```py
+>>> base10_to_base12(255)
+"173"
+```
