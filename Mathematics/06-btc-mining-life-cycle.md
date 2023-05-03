@@ -142,3 +142,25 @@ while (true) {
 console.log(sum);
 // This means that the calculated sum of the infinite series is approximately equal to 2.0
 ```
+
+in c:
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double sum = 0;
+    int n = 0;
+    while (1) {
+        double term = 1 / pow(2, n);
+        if (term < 1e-10) {
+            break;
+        }
+        sum += term;
+        n++;
+    }
+    printf("%lf", sum);
+    return 0;
+}
+// This means that the calculated sum of the infinite series is approximately equal to 2.0
+```
