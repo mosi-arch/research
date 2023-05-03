@@ -109,6 +109,27 @@ So each period hardest 2 times from the previus period!!!
   - the answer of this equetion is '(-1)/12'
   - euler proof this interactive '(s)' by -> '(pi^2)/6', before the riemann idea!
 
+in pascal:
+```pascal
+program InfiniteSeries;
+
+var
+  sum, term: double;
+  n: integer;
+
+begin
+  sum := 0;
+  n := 0;
+  repeat
+    term := 1 / power(2, n);
+    sum := sum + term;
+    n := n + 1;
+  until term < 1e-10;
+  writeln(sum);
+end.
+```
+output: This means that the calculated sum of the infinite series is approximately equal to 2.0000000000
+
 in python:
 ```py
 sum = 0
