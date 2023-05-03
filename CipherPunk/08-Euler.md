@@ -36,3 +36,24 @@ where p and q are the prime factors of N. Since p and q are kept secret in RSA, 
 Overall, Euler's number plays an important role in the security of RSA and other cryptographic algorithms, helping to ensure the confidentiality and integrity of sensitive information.
 
 read more [here](https://github.com/mosi-arch/research/blob/main/CipherPunk/04-Phi-Euler.md)
+
+---
+
+Calculate the value of Euler's number using the infinite series method with n terms.
+
+```py
+def calculate_euler(n):
+    """
+    Calculate the value of Euler's number using the infinite series method with n terms.
+    """
+    euler = 1
+    factorial = 1
+    for i in range(1, n):
+        factorial *= i
+        euler += 1/factorial
+    return euler
+
+# Example usage
+e = calculate_euler(10)
+print(e)  # Output: 2.7182818011463845
+```
