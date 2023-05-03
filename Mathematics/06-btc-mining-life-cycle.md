@@ -108,3 +108,17 @@ So each period hardest 2 times from the previus period!!!
 - In "Riemann zeta function" 'n=1' -> `ς(s) = ∞∑(n=1) ...` this is make same value like satoshi sequence, but for create 'life cycle' not for limitation. because this equetion generative and interactive :)
   - the answer of this equetion is '(-1)/12'
   - euler proof this interactive '(s)' by -> '(pi^2)/6', before the riemann idea!
+
+```py
+sum = 0
+n = 0
+while True:
+    term = 1 / (2 ** n)
+    if term < 1e-10: # stopping criteria
+        break
+    sum += term
+    n += 1
+
+print(sum, n)
+# output: near2 => 1.9999999998835847 , period momentom => 34
+```
