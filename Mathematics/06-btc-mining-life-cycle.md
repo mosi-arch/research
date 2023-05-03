@@ -109,6 +109,7 @@ So each period hardest 2 times from the previus period!!!
   - the answer of this equetion is '(-1)/12'
   - euler proof this interactive '(s)' by -> '(pi^2)/6', before the riemann idea!
 
+in python:
 ```py
 sum = 0
 n = 0
@@ -122,4 +123,22 @@ while True:
 print(sum, n)
 # output: near2 => 1.9999999998835847 , period momentom => 34
 # This means that the calculated sum of the infinite series is approximately equal to 2.0
+```
+
+in js:
+```js
+// nodejs
+let sum = 0;
+let n = 0;
+while (true) {
+    const term = 1 / Math.pow(2, n);
+    if (term < 1e-10) {
+        break;
+    }
+    sum += term;
+    n++;
+}
+
+console.log(sum);
+// This means that the calculated sum of the infinite series is approximately equal to 2.0
 ```
