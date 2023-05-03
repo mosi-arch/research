@@ -1,18 +1,15 @@
+## Logjam vulnerability
 "Logjam" is a vulnerability that affects the Diffie-Hellman key exchange algorithm, which is used to establish secure connections between two systems over an insecure network. The vulnerability allows an attacker to downgrade the security of the key exchange and perform a man-in-the-middle attack to eavesdrop on the communication.
 
 To simulate "Logjam," you can set up a test environment with two systems communicating over an insecure network using the Diffie-Hellman key exchange algorithm with weak parameters. Then, an attacker can intercept the communication and perform a downgrade attack to exploit the vulnerability and eavesdrop on the communication.
 
 To secure your application against "Logjam," you can implement the following measures:
 
-1. Use stronger parameters: Use larger prime numbers for the Diffie-Hellman key exchange to prevent attackers from performing a downgrade attack.
-
-2. Disable weak cipher suites: Disable cipher suites that use the Diffie-Hellman key exchange with weak parameters to prevent attackers from exploiting the vulnerability.
-
-3. Use perfect forward secrecy (PFS): Implement PFS to ensure that even if an attacker intercepts the communication and gains access to the private key, they cannot use it to decrypt past or future communications.
-
-4. Implement certificate pinning: Use certificate pinning to ensure that the certificate presented by the server is valid and not tampered with by an attacker.
-
-5. Keep software up to date: Keep your software and systems up to date with the latest security patches and updates to prevent attackers from exploiting known vulnerabilities.
+- 1. Use stronger parameters: Use larger prime numbers for the Diffie-Hellman key exchange to prevent attackers from performing a downgrade attack.
+- 2. Disable weak cipher suites: Disable cipher suites that use the Diffie-Hellman key exchange with weak parameters to prevent attackers from exploiting the vulnerability.
+- 3. Use perfect forward secrecy (PFS): Implement PFS to ensure that even if an attacker intercepts the communication and gains access to the private key, they cannot use it to decrypt past or future communications.
+- 4. Implement certificate pinning: Use certificate pinning to ensure that the certificate presented by the server is valid and not tampered with by an attacker.
+- 5. Keep software up to date: Keep your software and systems up to date with the latest security patches and updates to prevent attackers from exploiting known vulnerabilities.
 
 By implementing these measures, you can secure your application against "Logjam" and other similar attacks. It's also important to regularly review and update your security measures to stay ahead of emerging threats and vulnerabilities.
 
