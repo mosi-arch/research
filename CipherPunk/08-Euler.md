@@ -39,8 +39,9 @@ read more [here](https://github.com/mosi-arch/research/blob/main/CipherPunk/04-P
 
 ---
 
-Calculate the value of Euler's number using the infinite series method with n terms.
+**Calculate the value of Euler's number using the infinite series method with n terms**.
 
+- python:
 ```py
 def calculate_euler(n):
     """
@@ -56,4 +57,24 @@ def calculate_euler(n):
 # Example usage
 e = calculate_euler(10)
 print(e)  # Output: 2.7182818011463845
+```
+
+- js:
+```js
+function calculateEuler(n) {
+  /*
+   * Calculate the value of Euler's number using the infinite series method with n terms.
+   */
+  let euler = 1;
+  let factorial = 1;
+  for (let i = 1; i < n; i++) {
+    factorial *= i;
+    euler += 1 / factorial;
+  }
+  return euler;
+}
+
+// Example usage
+const e = calculateEuler(10);
+console.log(e); // Output: 2.7182818011463845
 ```
