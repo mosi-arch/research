@@ -34,3 +34,5 @@ The security of RSA relies on the fact that it is difficult to compute φ(N) fro
 where p and q are the prime factors of N. Since p and q are kept secret in RSA, it is difficult for an attacker to compute φ(N) and therefore difficult to compute the private key d from the public key (e, N).
 
 Overall, Euler's number plays an important role in the security of RSA and other cryptographic algorithms, helping to ensure the confidentiality and integrity of sensitive information.
+
+read more [here](https://github.com/mosi-arch/research/blob/main/CipherPunk/04-Phi-Euler.md)
