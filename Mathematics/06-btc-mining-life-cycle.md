@@ -121,4 +121,5 @@ while True:
 
 print(sum, n)
 # output: near2 => 1.9999999998835847 , period momentom => 34
+# This means that the calculated sum of the infinite series is approximately equal to 2.0
 ```
