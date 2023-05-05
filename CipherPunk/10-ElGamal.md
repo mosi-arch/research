@@ -6,21 +6,21 @@ The ElGamal encryption scheme has two parts: key generation and encryption/decry
 Mathematics of the ElGamal encryption scheme:
 
 Key Generation:
-- 1. Choose a large prime number p.
-- 2. Choose a primitive root g modulo p.
-- 3. Choose a random integer x such that 1 <= x <= p-2.
-- 4. Compute y = g^x mod p.
-- 5. The public key is (p, g, y). The private key is x.
+- 1.Choose a large prime number p.
+- 2.Choose a primitive root g modulo p.
+- 3.Choose a random integer x such that 1 <= x <= p-2.
+- 4.Compute y = g^x mod p.
+- 5.The public key is (p, g, y). The private key is x.
 
 Encryption:
-- 1. Choose a random integer k such that 1 <= k <= p-2 and gcd(k, p-1) = 1.
-- 2. Compute c1 = g^k mod p.
-- 3. Compute c2 = m * y^k mod p, where m is the plaintext message.
-- 4. The ciphertext is (c1, c2).
+- 1.Choose a random integer k such that 1 <= k <= p-2 and gcd(k, p-1) = 1.
+- 2.Compute c1 = g^k mod p.
+- 3.Compute c2 = m * y^k mod p, where m is the plaintext message.
+- 4.The ciphertext is (c1, c2).
 
 Decryption:
-- 1. Compute s = c1^x mod p.
-- 2. Compute the plaintext message as m = c2 * s^(-1) mod p, where s^(-1) is the modular multiplicative inverse of s modulo p.
+- 1.Compute s = c1^x mod p.
+- 2.Compute the plaintext message as m = c2 * s^(-1) mod p, where s^(-1) is the modular multiplicative inverse of s modulo p.
 
 The "ElGamal encryption scheme" uses the properties of modular arithmetic and discrete logarithms to provide secure public-key encryption. The scheme is based on the difficulty of computing discrete logarithms, which is believed to be a hard problem in certain mathematical groups. The security of the scheme depends on the choice of the prime number p and the random values used for encryption.
 
@@ -47,13 +47,13 @@ define variables:
 
 game logic (simple random generator, not safe):
 
-- 1. Player 1 chooses a random number r and calculates c1 = g^r mod p and c2 = (y2^r * 6) mod p.
-- 2. Player 1 sends c1 and c2 to Player 2.
-- 3. Player 2 calculates s = c1^x2 mod p and recovers the plaintext by dividing c2 by s: m' = c2 / s mod p = (y2^r * 6 * s^(-1)) mod p.
-- 4. Player 2 drops the dice and determines the outcome d, where 1 <= d <= 6.
-- 5. If d < 6, Player 2 bets m' on the table and sends the bet to Player 1. If d = 6, Player 2 bets 0 on the table and sends the entire amount m' to Player 1.
-- 6. Player 1 drops the dice and determines the outcome e, where 1 <= e <= 6.
-- 7. If e < 6, Player 1 bets m' on the table and sends the bet to Player 2. If e = 6, Player 1 bets 0 on the table and sends the entire amount m' to Player 2.
+- 1.Player 1 chooses a random number r and calculates c1 = g^r mod p and c2 = (y2^r * 6) mod p.
+- 2.Player 1 sends c1 and c2 to Player 2.
+- 3.Player 2 calculates s = c1^x2 mod p and recovers the plaintext by dividing c2 by s: m' = c2 / s mod p = (y2^r * 6 * s^(-1)) mod p.
+- 4.Player 2 drops the dice and determines the outcome d, where 1 <= d <= 6.
+- 5.If d < 6, Player 2 bets m' on the table and sends the bet to Player 1. If d = 6, Player 2 bets 0 on the table and sends the entire amount m' to Player 1.
+- 6.Player 1 drops the dice and determines the outcome e, where 1 <= e <= 6.
+- 7.If e < 6, Player 1 bets m' on the table and sends the bet to Player 2. If e = 6, Player 1 bets 0 on the table and sends the entire amount m' to Player 2.
 
 To determine the winner of each round, we compare the outcomes of the two dice rolls. If one player rolls a 6 and the other rolls less than 6, the player who rolled a 6 wins the entire bet on the table.
 
@@ -143,7 +143,8 @@ else:
 
 solidity simple example (i made couple bug in code, to not usable. so please dont use this):\
 random generators is simple and not safe in this example.\
-solidity not good language for simulating a game, this is example.
+solidity not good language for simulating a game, this is example.\
+"block.prevrandao" is new in solidity, generate random from bacon chain.
 
 ```solidity 
 pragma solidity 0.8;
@@ -170,11 +171,11 @@ contract DiceGame {
         require(player1.publicKey == 0 || player2.publicKey == 0, "Game is already full.");
         
         if (player1.publicKey == 0) {
-            player1.privateKey = uint256(keccak256(abi.encodePacked(msg.sender, block.timestamp)));
+            player1.privateKey = uint256(keccak256(abi.encodePacked(msg.sender, block.prevrandao)));
             player1.publicKey = powMod(g, player1.privateKey, p);
             player1.bet = msg.value;
         } else {
-            player2.privateKey = uint256(keccak256(abi.encodePacked(msg.sender, block.timestamp)));
+            player2.privateKey = uint256(keccak256(abi.encodePacked(msg.sender, block.prevrandao)));
             player2.publicKey = powMod(g, player2.privateKey, p);
             player2.bet = msg.value;
         }
@@ -228,11 +229,11 @@ contract DiceGame {
     }
     
     function getRandomDiceRoll(uint256 seed) internal view returns (uint256) {
-        return uint256(keccak256(abi.encodePacked(seed, block.timestamp, block.difficulty))) % 6 + 1;
+        return uint256(keccak256(abi.encodePacked(seed, block.prevrandao))) % 6 + 1;
     }
     
     function encrypt(uint256 publicKey, uint256 privateKey, uint256 message) internal pure returns (uint256) {
-        uint256 r = uint256(keccak256(abi.encodePacked(publicKey, privateKey, block.timestamp)));
+        uint256 r = uint256(keccak256(abi.encodePacked(publicKey, privateKey, block.prevrandao)));
         return mulmod(powMod(g, r, p), message, p);
     }
     
