@@ -249,6 +249,6 @@ contract DiceGame {
 ---
 
 Best usecase for "ElGamal" is when you don't want to reveal data but need some mathemathic operations.\
-In the logic the "ElGamal" is a "diffie hellman". read my article for EC-DH [here](https://github.com/mosi-arch/research/blob/main/CipherPunk/07-EC-DH.md)
+In the logic the "ElGamal" is a "diffie hellman". read my article for Diffie-Hellman [here](https://github.com/mosi-arch/research/blob/main/CipherPunk/11-Diffie_Hellman.md) & EC-DH [here](https://github.com/mosi-arch/research/blob/main/CipherPunk/07-EC-DH.md)
 
 > my data is too old, please use your research
