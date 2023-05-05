@@ -38,10 +38,10 @@ So, Alice and Bob can establish a shared secret key over an insecure communicati
 Some common use cases for the Diffie-Hellman key exchange include:
 
 - 1-Secure communication between two parties: 
-- 	- Diffie-Hellman can be used to establish a shared secret key between two parties to secure their communication. This is commonly used in applications such as online banking, e-commerce, and messaging apps.
+ 	- Diffie-Hellman can be used to establish a shared secret key between two parties to secure their communication. This is commonly used in applications such as online banking, e-commerce, and messaging apps.
 - 2-VPN connections: 
-- 	- Virtual private network (VPN) connections often use Diffie-Hellman to establish a shared secret key for secure communication between a user's device and a remote server.
+ 	- Virtual private network (VPN) connections often use Diffie-Hellman to establish a shared secret key for secure communication between a user's device and a remote server.
 - 3-Secure data transfer: 
-- 	- Diffie-Hellman can also be used to secure data transfer between two systems. This is commonly used in applications such as file transfer protocols and secure email.
+ 	- Diffie-Hellman can also be used to secure data transfer between two systems. This is commonly used in applications such as file transfer protocols and secure email.
 
 At the end, Diffie-Hellman is a key exchange algorithm that allows two parties to establish a shared secret key over an insecure communication channel. Its mathematical basis involves modular arithmetic and the discrete logarithm problem. Some common use cases include secure communication between two parties, VPN connections, and secure data transfer.
