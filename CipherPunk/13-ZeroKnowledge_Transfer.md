@@ -55,7 +55,7 @@ b, B = generate_keys(p, g)
 m = 100
 xyz = transfer_money(p, g, a, A, b, B, m)
 transfer_money(p, g, a, A, b, B, m)
-print(xyz, m, a, b, A, B) # false = transact process
+print(xyz, m, a, A, b, B) # false = transact process
 ```
 
 example output:
