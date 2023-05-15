@@ -31,8 +31,8 @@
    
    The final result is the candidate with the highest decrypted tally.
 
-4. **Write the Python code**:\
-   Here is a possible Python implementation of the above formula:
+4. **Watch the Python code**:\
+   Python implementation of the above formula:
    
 ```python
    from random import randint
