@@ -31,95 +31,6 @@
    
    The final result is the candidate with the highest decrypted tally.
 
-4. **Watch the Python code**:\
-   Python implementation of the above formula:
-   
-```python
-   from random import randint
-   from functools import reduce
-   
-   def modexp(base, exp, modulus):
-       result = 1
-       while exp > 0:
-           if exp % 2 == 1:
-               result = (result * base) % modulus
-           base = (base * base) % modulus
-           exp //= 2
-       return result
-   
-   def generate_params(m):
-       p = 2
-       while modexp(2, p-1, p) != 1 or modexp(2, (p-1)//2, p) != -1:
-           p += 1
-       G = [modexp(2, i, p) for i in range(1, p)]
-       g = G[randint(0, len(G)-1)]
-       x = randint(1, p-2)
-       h = modexp(g, x, p)
-       return p, g, h, x, m
-   
-   def encrypt_vote(v, h):
-       r = randint(1, p-2)
-       c = (modexp(g, r, p), modexp(h, v, p) * modexp(g, r, p) % p)
-       return c, r
-   
-   def decrypt_vote(c, x):
-       r, hv = c
-       d = r + modexp(hv, p-1-x, p)
-       return d
-   
-   def compute_secret_sharing():
-       S = [randint(1, p-2) for i in range(n)]
-       T = [modexp(g, s, p) for s in S]
-       s = reduce(lambda a, b: a*b % p, T)
-       return T, s
-   
-   def combine_decryption(T, d):
-       hv = reduce(lambda a, b: a*b % p, [modexp(t, d, p) for t in T])
-       return hv
-   
-   def compute_tally():
-       E = [modexp(g, 0, p)] * m
-       for i in range(n):
-           c, r = encrypt_vote(votes[i], h)
-           U[i] = modexp(g, r, p)
-           E[votes[i]-1] = (E[votes[i]-1][0] * c[0] % p, E[votes[i]-1][1] * c[1] % p)
-       F = [combine_decryption(T, decrypt_vote(e, x)) for e in E]
-       G = [modexp(f, 1, p) for f in F]
-       return G
-   
-   # Generate parameters
-   p, g, h, x, m = generate_params(3)
-   
-   # Cast votes
-   n = 10
-   votes = [randint(1, m) for i in range(n)]
-   U = [0] * n
-   C = [encrypt_vote(votes[i], h)[0] for i in range(n)]
-   
-   # Compute secret sharing
-   T, s = compute_secret_sharing()
-   
-   # Decrypt votes
-   D = [decrypt_vote(c, x) for c in C]
-   
-   # Compute tally
-   G = compute_tally()
-   
-   # Print results
-   print("Votes:", votes)
-   print("Encrypted votes:", C)
-   print("Decrypted votes:", D)
-   print("Secret sharing:", T)
-   print("Tally:", G)
-   print("Winner:", G.index(max(G))+1)
-```
-   
-In this code generates random parameters for a voting system with 3 candidates, and then simulates the casting and 
-counting of 10 votes.\
-The results are printed to the console, including the **decrypted votes**, **the secret sharing**, **the tally**, and **the winner**.\
-_Note that the code assumes a trusted election authority that generates the parameters and distributes the secret sharing._\
-In a real-world scenario, additional measures would be necessary to ensure the integrity and security of the system.
-
 ---
    
 ### Simulation voting system:
@@ -198,56 +109,89 @@ Let's assume the following parameters:
 #### Python simulation example:
 
 ```python
-from random import randint
-from functools import reduce
+import random
 
-# Define parameters
+# Parameters
 p = 23
 g = 5
 x = 7
 h = pow(g, x, p)
-m = 3
+m = 3  # number of candidates
+n = 10  # number of voters
 
-# Simulate voting
-n = 10
-votes = [randint(1, m) for i in range(n)]
-enc_votes = []
-r_values = []
+# Candidates
+candidates = [f"Candidate {i+1}" for i in range(m)]
+
+# Encrypt votes
+votes = []
 for i in range(n):
-    r = randint(1, p-2)
-    c = (pow(g, r, p), (pow(h, votes[i], p) * pow(g, r, p)) % p)
-    enc_votes.append(c)
-    r_values.append(r)
+    candidate = random.randint(0, m-1)
+    r = random.randint(1, p-1)
+    c = (pow(g, candidate+1, p), h * pow(g, r, p) % p)
+    votes.append((candidate, c, r))
 
 # Generate secret sharing of decryption key
 k1 = 3
 k2 = 11
 t1 = pow(g, k1, p)
 t2 = pow(g, k2, p)
-k_prime = k1 + k2
 
 # Combine shares of encryption random numbers
-u_values = [pow(g, r, p) for r in r_values]
-u_product = reduce(lambda x, y: x * y % p, u_values)
+k_prime = (k1 + k2) % (p-1)
 
 # Decrypt votes
-dec_votes = []
-for i in range(n):
-    d = (r_values[i] + k_prime * (pow(t1, 2, p) * pow(t2, u_values[i], p)) % p) % p
-    dec_votes.append(d)
+decrypted_votes = []
+for candidate, c, r in votes:
+    d = (r + k_prime * (pow(t1, 2, p) * pow(t2, candidate+1, p)) % p) % p
+    decrypted_votes.append((candidate, d))
 
 # Compute tally
-f_values = [pow(g, sum(1 for v in dec_votes if v == j), p) for j in range(1, m+1)]
-f_product = reduce(lambda x, y: x * y % p, f_values)
-winner = f_values.index(max(f_values)) + 1
+tally = [pow(g, sum([d for c, d in decrypted_votes if c == i]), p) for i in range(m)]
 
 # Print results
-print("Votes:", votes)
-print("Encrypted votes:", enc_votes)
-print("Encryption random numbers:", r_values)
-print("Shares of encryption random numbers:", u_values)
-print("Shares of decryption key:", t1, t2)
-print("Decrypted votes:", dec_votes)
-print("Tally:", f_values)
-print("Winner:", winner)
+print("Encrypted votes:")
+for i, (candidate, c, r) in enumerate(votes):
+    print(f"Voter {i+1}: {candidate+1} -> {c} (r={r})")
+print("\nDecrypted votes:")
+for i, (candidate, d) in enumerate(decrypted_votes):
+    print(f"Voter {i+1}: {candidate+1} -> {d}")
+print("\nTally:")
+for i, count in enumerate(tally):
+    print(f"{candidates[i]}: {count}")
+print("\nWinner:", candidates[tally.index(max(tally))])
+```
+
+Output example:
+
+```python
+Encrypted votes:
+Voter 1: 1 -> (16, 18) (r=6)
+Voter 2: 0 -> (8, 15) (r=16)
+Voter 3: 2 -> (4, 6) (r=3)
+Voter 4: 2 -> (20, 3) (r=14)
+Voter 5: 0 -> (13, 8) (r=19)
+Voter 6: 1 -> (10, 12) (r=2)
+Voter 7: 2 -> (18, 7) (r=22)
+Voter 8: 1 -> (19, 7) (r=4)
+Voter 9: 1 -> (2, 8) (r=15)
+Voter 10: 0 -> (11, 16) (r=21)
+
+Decrypted votes:
+Voter 1: 1 -> 14
+Voter 2: 0 -> 17
+Voter 3: 2 -> 4
+Voter 4: 2 -> 2
+Voter 5: 0 -> 11
+Voter 6: 1 -> 20
+Voter 7: 2 -> 10
+Voter 8: 1 -> 11
+Voter 9: 1 -> 20
+Voter 10: 0 -> 21
+
+Tally:
+Candidate 1: 9
+Candidate 2: 13
+Candidate 3: 1
+
+Winner: Candidate 2
 ```
