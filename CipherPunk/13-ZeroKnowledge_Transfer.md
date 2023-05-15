@@ -75,7 +75,7 @@ to: 744736405 | 236349327
 ---
 
 ### Algorithm for a zero-knowledge data transfer system using the **ElGamal encryption scheme**:
-Usecase (example): send medical history to second dr without publish data.
+Usecase (example): send medical history to second dr without reveal data.
 
 1. Generate a private key and public key for the sender using the ElGamal encryption scheme. The private key consists of a random integer `x` such that `1 < x < p-1`, where `p` is a large prime number, and the public key consists of a generator g and the value `h = g^x mod p`.
   
