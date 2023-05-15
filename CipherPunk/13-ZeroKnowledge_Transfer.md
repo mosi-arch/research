@@ -1,4 +1,8 @@
-list: [El-Gamal](https://github.com/mosi-arch/research/blob/main/CipherPunk/13-ZeroKnowledge_Transfer.md#algorithm-for-a-zero-knowledge-data-transfer-system-using-the-elgamal-encryption-scheme)
+List: 
+- [Transfer](https://github.com/mosi-arch/research/blob/main/CipherPunk/13-ZeroKnowledge_Transfer.md#algorithm-of-zero-knowledge-transfer-money-system)
+- [El-Gamal](https://github.com/mosi-arch/research/blob/main/CipherPunk/13-ZeroKnowledge_Transfer.md#algorithm-for-a-zero-knowledge-data-transfer-system-using-the-elgamal-encryption-scheme)
+
+#
 
 ### Algorithm of zero-knowledge transfer money system:
 
