@@ -1,4 +1,4 @@
-## "solution algorithm" : how to make a voting system, by "zero knowledge" for voter.
+## "Solution Algorithm" : how to make a voting system, by "zero knowledge" for voter.
 
 1. **Define the problem**: 
    We want to create a voting system where voters can cast their votes anonymously, without revealing their identities or 
