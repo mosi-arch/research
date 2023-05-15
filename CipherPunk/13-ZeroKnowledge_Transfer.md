@@ -1,4 +1,6 @@
-Algorithm of zero-knowledge transfer money system:
+list: [El-Gamal](https://github.com/mosi-arch/research/blob/main/CipherPunk/13-ZeroKnowledge_Transfer.md#algorithm-for-a-zero-knowledge-data-transfer-system-using-the-elgamal-encryption-scheme)
+
+### Algorithm of zero-knowledge transfer money system:
 
 1. Define the parameters:
    - `p`: a large prime number
