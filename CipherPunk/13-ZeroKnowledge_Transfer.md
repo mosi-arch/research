@@ -60,7 +60,7 @@ print(xyz, m, a, b, A, B) # false = transact process
 
 example output:
 ```js
-process level: False 
+process level: False [because xyz before transact, but transaction after that happend]
 value: 100 
 from: 377463712 | 609754778
 to: 744736405 | 236349327
