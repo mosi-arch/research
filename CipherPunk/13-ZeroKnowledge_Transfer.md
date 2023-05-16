@@ -61,13 +61,11 @@ b, B = generate_keys(p, g)
 m = 100
 xyz = transfer_money(p, g, a, A, b, B, m)
 transfer_money(p, g, a, A, b, B, m)
-print(xyz, m, a, A, b, B) # false = transact process
+print(a, A, b, B) # false = transact process
 ```
 
 example output:
 ```js
-process level: False [because xyz before transact, but transaction after that happend]
-value: 100 
 from: 377463712 | 609754778
 to: 744736405 | 236349327
 ```
