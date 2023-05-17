@@ -53,3 +53,16 @@ else:
 - The code then compares the hashed value of the targeted data with the hashed values in the pool. 
 - If there is a match, the original data is retrieved from the pool. 
 - Otherwise, the code prints a message indicating that the targeted data was not found.
+
+---
+
+The time complexity of the algorithm for finding targeted data in a pool of data depends on the size of the pool and the hashing algorithm used. 
+
+In the example algorithm I provided, the time complexity of hashing the targeted data and the pool of data is O(n), where n is the number of items in the pool. The time complexity of searching for a match in the hashed values is also O(n) in the worst case, where the targeted data is not in the pool.
+
+If a more efficient hashing algorithm is used, such as SHA-512 or BLAKE2, the time complexity can be reduced to O(log n) or even O(1) for very large pools of data.
+
+Finally, the time complexity of the algorithm depends on the specific implementation and the size of the data pool, but it is generally efficient for moderate-sized data pools.
+
+#### Solution for saving time:
+When save database, a version or the data saved by hash. Then search algorithm have less time.
