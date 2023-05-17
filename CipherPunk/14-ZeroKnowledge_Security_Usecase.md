@@ -28,25 +28,23 @@ Let(variable) d be the document to be transferred, `H(d)` be its hash value, and
 > ◼ 'let' in mathematics same as 'variable' in programming
 
 1. Sender: Choose a random value `r` and compute the commitment value `C` as:
-```
-C = g^r * (H(d))^s
-```
+
+`C = g^r * (H(d))^s`
 
 2. Sender: Send `C` and `E(k, d)` to the recipient.
 
 3. Recipient: Choose a random value `x` and send it to the sender.
 
 4. Sender: Compute the response value `y` as:
-```
-y = r + s*x
-```
+
+`y = r + s*x`
 
 5. Sender: Send `y` to the recipient.
 
 6. Recipient: Verify the zero-knowledge proof by checking that:
-```
-g^y = C * (H(d))^x
-```
+
+`g^y = C * (H(d))^x`
+
 
 7. Recipient: If the zero-knowledge proof is valid, decrypt `E(k, d)` using the shared secret key.
 
@@ -56,23 +54,17 @@ g^y = C * (H(d))^x
 
 Suppose that a doctor wishes to send a medical document containing a patient's age to a pharmacy, without revealing the patient's identity or any other personal information. The doctor encrypts the document using a secure symmetric encryption algorithm such as `AES-256`, with a randomly generated key `k`. The doctor then computes the hash value of the document, `H(d)`, which in this case would be the hash of the patient's age. The doctor also chooses a secret value `s`, and computes the commitment value `C` as:
 
-```
-C = g^r * (H(d))^s
-```
+`C = g^r * (H(d))^s`
 
 where `g` is a small generator of a cyclic group, and `r` is a randomly generated value. The doctor sends the commitment value `C` and the encrypted document `E(k, d)` to the pharmacy.
 
 The pharmacy receives the commitment value and the encrypted document, and chooses a random value `x`. The pharmacy sends `x` to the doctor, who computes the response value `y` as:
 
-```
-y = r + s*x
-```
+`y = r + s*x`
 
 The doctor sends `y` to the pharmacy, which verifies the zero-knowledge proof by checking that:
 
-```
-g^y = C * (H(d))^x
-```
+`g^y = C * (H(d))^x`
 
 If the proof is valid, the pharmacy can be sure that the doctor knows the patient's age, without learning any other personal information about the patient. The pharmacy can then decrypt the document using the shared secret key `k`, and use the patient's age to dispense the appropriate medication.
 
