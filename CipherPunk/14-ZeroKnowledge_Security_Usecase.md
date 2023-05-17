@@ -24,8 +24,8 @@
 
 ### Mathematics Formula:
 
-Let(variable) d be the document to be transferred, `H(d)` be its hash value, and `E(k, d)` be the result of encrypting d with a symmetric encryption algorithm using key `k`. Let g be a generator of a cyclic group, and let s be a secret value known only to the sender.
-> ◼ 'let' in mathematics same as 'variable' in programming
+Let(variable) `d` be the document to be transferred, `H(d)` be its hash value, and `E(k, d)` be the result of encrypting d with a symmetric encryption algorithm using key `k`. Let g be a generator of a cyclic group, and let s be a secret value known only to the sender.
+> 🔸 'let' in mathematics same as 'variable' in programming
 
 1. Sender: Choose a random value `r` and compute the commitment value `C` as:
 
