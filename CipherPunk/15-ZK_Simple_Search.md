@@ -66,4 +66,5 @@ If a more efficient hashing algorithm is used, such as `SHA-512` or `BLAKE2`, th
 Finally, the time complexity of the algorithm depends on the specific implementation and the size of the data pool, but it is generally efficient for moderate-sized data pools.
 
 #### Solution for saving time:
-When save database, a version or the data saved by hash. Then search algorithm have less time. (Do this and get `O(1)`, but remember: `n != np`)
+When save database, a version or the data saved by hash. Then search algorithm have less time. 
+- (Do this method and get `O(1)`, but remember: `n != np`)
