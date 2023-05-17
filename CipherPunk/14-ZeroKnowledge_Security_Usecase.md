@@ -18,7 +18,7 @@
 
 9. The recipient verifies the zero-knowledge proof by checking that `g^y = C * (H(d)^x)`.
 
-10. If the zero-knowledge proof is valid, the recipient can be sure that the sender knows the secret value s without revealing it, and therefore the sender must have access to the document. The recipient can then decrypt the document using the shared secret key.
+10. If the zero-knowledge proof is valid, the recipient can be sure that the sender knows the secret value `s` without revealing it, and therefore the sender must have access to the document. The recipient can then decrypt the document using the shared secret key.
 
 #
 
