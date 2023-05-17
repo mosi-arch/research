@@ -76,3 +76,63 @@ g^y = C * (H(d))^x
 
 If the proof is valid, the pharmacy can be sure that the doctor knows the patient's age, without learning any other personal information about the patient. The pharmacy can then decrypt the document using the shared secret key `k`, and use the patient's age to dispense the appropriate medication.
 
+---
+
+- Python example:
+
+```python
+import hashlib
+import secrets
+
+
+def encrypt_document(document, key):
+    """Encrypts the given document using the given key."""
+    iv = secrets.token_bytes(16)
+    cipher = Cipher(algorithms.AES(key), modes.CTR(iv))
+    encryptor = cipher.encryptor()
+    ciphertext = encryptor.update(document) + encryptor.finalize()
+    return iv + ciphertext
+
+
+def decrypt_document(ciphertext, key):
+    """Decrypts the given ciphertext using the given key."""
+    iv, ciphertext = ciphertext[:16], ciphertext[16:]
+    cipher = Cipher(algorithms.AES(key), modes.CTR(iv))
+    decryptor = cipher.decryptor()
+    return decryptor.update(ciphertext) + decryptor.finalize()
+
+
+def transfer_document(document, key, generator=2):
+    """Transfers the given document anonymously using zero-knowledge proofs."""
+    # Step 1: Encrypt the document
+    iv_and_ciphertext = encrypt_document(document, key)
+
+    # Step 2: Generate a random value r
+    r = int.from_bytes(secrets.token_bytes(32), byteorder='big')
+
+    # Step 3: Compute the hash value of the document
+    hash_value = hashlib.sha256(document).digest()
+
+    # Step 4: Compute the commitment value C
+    s = int.from_bytes(secrets.token_bytes(32), byteorder='big')  # choose a secret value
+    C = pow(generator, r) * pow(int.from_bytes(hash_value, byteorder='big'), s)
+
+    # Step 5: Send the commitment value and encrypted document
+    send(C, iv_and_ciphertext)
+
+    # Step 6: Receive x from the recipient
+    x = receive()
+
+    # Step 7: Compute the response value y
+    y = r + s * x
+
+    # Step 8: Send the response value to the recipient
+    send(y)
+
+    # Step 9: Verify the zero-knowledge proof
+    if pow(generator, y) != C * pow(int.from_bytes(hash_value, byteorder='big'), x):
+        raise ValueError('Zero-knowledge proof verification failed')
+
+    # Step 10: Decrypt the document
+    return decrypt_document(receive(), key)
+```
