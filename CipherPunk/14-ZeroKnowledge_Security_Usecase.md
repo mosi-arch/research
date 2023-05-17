@@ -1,22 +1,22 @@
 ### Solution algorithm for transferring a document anonymously using zero-knowledge proofs:
 
-1. Encrypt the document using a secure encryption algorithm such as AES-256. This ensures that the contents of the document are protected during transmission.
+1. Encrypt the document using a secure encryption algorithm such as `AES-256`. This ensures that the contents of the document are protected during transmission.
 
-2. Generate a random value, r, using a cryptographic random number generator. This value will be used to create a zero-knowledge proof.
+2. Generate a random value, `r`, using a cryptographic random number generator. This value will be used to create a zero-knowledge proof.
 
-3. Compute the hash value of the document, H(d), using a secure hash function such as SHA-256. This hash value will be used as the basis for the zero-knowledge proof.
+3. Compute the hash value of the document, `H(d)`, using a secure hash function such as `SHA-256`. This hash value will be used as the basis for the zero-knowledge proof.
 
-4. Compute a commitment value, C, as follows: C = g^r * H(d)^s, where g is a generator of a cyclic group, and s is a secret value known only to the sender.
+4. Compute a commitment value, `C`, as follows: `C = g^r * H(d)^s`, where g is a generator of a cyclic group, and s is a secret value known only to the sender.
 
-5. Send the recipient the commitment value, C, along with the encrypted document.
+5. Send the recipient the commitment value, `C`, along with the encrypted document.
 
-6. The recipient generates a random value, x, and sends it to the sender.
+6. The recipient generates a random value, `x`, and sends it to the sender.
 
-7. The sender computes a response value, y, as follows: y = r + s*x.
+7. The sender computes a response value, `y`, as follows: `y = r + s*x`.
 
-8. The sender sends the response value, y, to the recipient.
+8. The sender sends the response value, `y`, to the recipient.
 
-9. The recipient verifies the zero-knowledge proof by checking that g^y = C * (H(d)^x).
+9. The recipient verifies the zero-knowledge proof by checking that `g^y = C * (H(d)^x)`.
 
 10. If the zero-knowledge proof is valid, the recipient can be sure that the sender knows the secret value s without revealing it, and therefore the sender must have access to the document. The recipient can then decrypt the document using the shared secret key.
 
@@ -24,31 +24,31 @@
 
 ### Mathematics Formula:
 
-Let(variable) d be the document to be transferred, H(d) be its hash value, and E(k, d) be the result of encrypting d with a symmetric encryption algorithm using key k. Let g be a generator of a cyclic group, and let s be a secret value known only to the sender.
+Let(variable) d be the document to be transferred, `H(d)` be its hash value, and `E(k, d)` be the result of encrypting d with a symmetric encryption algorithm using key `k`. Let g be a generator of a cyclic group, and let s be a secret value known only to the sender.
 > ◼ 'let' in mathematics same as 'variable' in programming
 
-1. Sender: Choose a random value r and compute the commitment value C as:
+1. Sender: Choose a random value `r` and compute the commitment value `C` as:
 ```
 C = g^r * (H(d))^s
 ```
 
-2. Sender: Send C and E(k, d) to the recipient.
+2. Sender: Send `C` and `E(k, d)` to the recipient.
 
-3. Recipient: Choose a random value x and send it to the sender.
+3. Recipient: Choose a random value `x` and send it to the sender.
 
-4. Sender: Compute the response value y as:
+4. Sender: Compute the response value `y` as:
 ```
 y = r + s*x
 ```
 
-5. Sender: Send y to the recipient.
+5. Sender: Send `y` to the recipient.
 
 6. Recipient: Verify the zero-knowledge proof by checking that:
 ```
 g^y = C * (H(d))^x
 ```
 
-7. Recipient: If the zero-knowledge proof is valid, decrypt E(k, d) using the shared secret key.
+7. Recipient: If the zero-knowledge proof is valid, decrypt `E(k, d)` using the shared secret key.
 
 #
 
