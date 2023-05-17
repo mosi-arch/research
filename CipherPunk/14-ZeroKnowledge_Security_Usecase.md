@@ -70,7 +70,7 @@ If the proof is valid, the pharmacy can be sure that the doctor knows the patien
 
 ---
 
-- Python example:
+- Python example simulation:
 
 ```python
 import hashlib
