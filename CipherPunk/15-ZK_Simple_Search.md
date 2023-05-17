@@ -56,6 +56,7 @@ else:
 
 ---
 
+#### The time complexity of the algorithm:
 The time complexity of the algorithm for finding targeted data in a pool of data depends on the size of the pool and the hashing algorithm used. 
 
 In the example algorithm I provided, the time complexity of hashing the targeted data and the pool of data is O(n), where n is the number of items in the pool. The time complexity of searching for a match in the hashed values is also O(n) in the worst case, where the targeted data is not in the pool.
