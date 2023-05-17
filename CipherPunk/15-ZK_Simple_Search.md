@@ -27,7 +27,7 @@ Where `x` is the input data, `H` is the hash function, and `y` is the resulting 
 
 - Python example simulation:
 
-```
+```python
 import hashlib
 
 # Define the targeted data
