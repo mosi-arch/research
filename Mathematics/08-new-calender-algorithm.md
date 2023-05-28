@@ -38,6 +38,7 @@ The week days of a month in a 9-day week system with 5 weeks per month:
 | 5    | Day 37 | Day 38 | Day 39  | Day 40    | Day 41   | Day 42 | Day 43   | Day 44   | Day 45   |
 
 Our weeks have 9 days, so we can use custom days for this system, or use the old system. At all this is just an example.
+- In seven days calender, but 9 days on calculation: [here](https://github.com/mosi-arch/research/blob/main/Mathematics/08-new-calender-algorithm.md#7-days-in-week-but-itterate-in-9-days)
 
 The calendar shows 5 weeks, but in a full year, there would be approximately 40 weeks (46 in 7 days but itterate in 9) in this system (depending on leap years and any adjustments made to keep the system synchronized with the Gregorian calendar).
 
