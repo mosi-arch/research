@@ -145,6 +145,6 @@ After each season make a or couple days free for holydays.
 
 #
 
-### Did can we use this calender in something?
+### Can we use this calendar in something?
 Yes, but this is just my algorithm for a "competition".\
-For real life need to generate "culture", but you can use this for a "game", like an open world game.
+You need to produce "culture" for real life, but you can use this for a "game" like an open world game.
