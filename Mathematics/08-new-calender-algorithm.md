@@ -148,3 +148,7 @@ After each season make a or couple days free for holydays.
 ### Can we use this calendar in something?
 Yes, but this is just my algorithm for a "competition".\
 You need to produce "culture" for real life, but you can use this for a "game" like an open world game.
+
+---
+
+> this algorithm made by me in the year 2000. iran, shiraz
