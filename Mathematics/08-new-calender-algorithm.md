@@ -137,3 +137,8 @@ If calculating in normal way, something happend like this:
 | 5    | Day 29 | Day 30 | Day 31  | Day 32    | Day 33   | Day 34 | Day 35   | 
 | 6    | Day 36 | Day 37 | Day 38  | Day 39    | Day 40   | Day 41 | Day 42   | 
 | 7    | Day 43 | Day 44 | Day 45  | new moon - Day 1    | Day 2   | Day 3 | Day 4   | 
+
+#
+
+#### Holydays idea
+After each season make a or couple days free for holydays.
