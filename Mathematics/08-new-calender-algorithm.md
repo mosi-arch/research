@@ -39,13 +39,13 @@ The week days of a month in a 9-day week system with 5 weeks per month:
 
 Our weeks have 9 days, so we can use custom days for this system, or use the old system. At all this is just an example.
 
-The calendar shows 5 weeks, but in a full year, there would be approximately 46 weeks in this system (depending on leap years and any adjustments made to keep the system synchronized with the Gregorian calendar).
+The calendar shows 5 weeks, but in a full year, there would be approximately 40 weeks (46 in 7 days but itterate in 9) in this system (depending on leap years and any adjustments made to keep the system synchronized with the Gregorian calendar).
 
 ---
 
 ### Calculate the calender:
 
-In a 9-day week system, a year would have approximately 46 weeks and 1 day (or 2 days in a leap year). 
+In a 9-day week system, a year would have approximately 40 weeks (46 in 7 days but itterate in 9) and 1 day (or 2 days in a leap year). 
 
 To calculate this, we can use the following formula:
 
@@ -71,7 +71,7 @@ To calculate the remaining days, we can subtract the number of full weeks multip
 remaining days = 365 - (40 * 9) = 365 - 360 = 5
 ```
 
-Therefore, a year in a 9-day week system would have 46 weeks and 1 day, since the remaining 5 days cannot make up a full week. In a leap year with 366 days, there would be 46 weeks and 2 days.
+Therefore, a year in a 9-day week system would have 40 weeks (46 in 7 days but itterate in 9) and 1 day, since the remaining 5 days cannot make up a full week. In a leap year with 366 days, there would be 40 weeks (46 in 7 days but itterate in 9) and 2 days.
 
 ---
 
@@ -88,7 +88,7 @@ Algorithm of the corresponding mathematics for a 9-day week system with 8 months
 
 Mathematically, we can represent this as follows:
 
-- Number of weeks in a year: 	46 (360 days / 9 days per week)
+- Number of weeks in a year: 	40 (360 days / 9 days per week) |  Or (46 in 7 days but itterate in 9)
 - Number of days per month: 	45 (5 weeks x 9 days per week)
 - Number of days per season: 	90 (2 months x 45 days per month)
 - Number of months per year: 	8 (4 seasons x 2 months per season)
