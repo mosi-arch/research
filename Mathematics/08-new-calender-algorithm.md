@@ -122,3 +122,17 @@ Possible example month names for the 8-month system described in the algorithm:
 
 At the end, this algorithm and mathematics provide a simple and consistent way to divide the year into 4 seasons with 8 months, each consisting of 2 months of 5 weeks each. The additional free days at the end of each year can be used for holidays or other special occasions, making it a flexible and customizable system. (holydays not use in the week days and will be free)
 
+---
+
+#### 7 days in week, but itterate in 9 days
+If calculating in normal way, something happend like this:
+
+| Week |     |    |     |        |     |   |      |
+|------|--------|--------|---------|-----------|----------|--------|----------|
+| 1    | Day 1  | Day 2  | Day 3   | Day 4     | Day 5    | Day 6  | Day 7    | 
+| 2    | Day 8  | Day 9  | Day 10  | Day 11    | Day 12   | Day 13 | Day 14   | 
+| 3    | Day 15 | Day 16 | Day 17  | Day 18    | Day 19   | Day 20 | Day 21   | 
+| 4    | Day 22 | Day 23 | Day 24  | Day 25    | Day 26   | Day 27 | Day 28   | 
+| 5    | Day 29 | Day 30 | Day 31  | Day 32    | Day 33   | Day 34 | Day 35   | 
+| 6    | Day 36 | Day 37 | Day 38  | Day 39    | Day 40   | Day 41 | Day 42   | 
+| 7    | Day 43 | Day 44 | Day 45  | new moon - Day 1    | Day 2   | Day 3 | Day 4   | 
