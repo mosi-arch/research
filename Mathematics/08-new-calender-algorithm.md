@@ -89,21 +89,21 @@ Algorithm of the corresponding mathematics for a 9-day week system with 8 months
 
 Mathematically, we can represent this as follows:
 
-- Number of weeks in a year: 	40 (360 days / 9 days per week) |  Or (46 in 7 days but itterate in 9)
-- Number of days per month: 	45 (5 weeks x 9 days per week)
-- Number of days per season: 	90 (2 months x 45 days per month)
-- Number of months per year: 	8 (4 seasons x 2 months per season)
-- Number of days in a year: 	365 (360 days + 5 free days) or 366 (360 days + 6 free days) in a leap year
-- Number of free days per year: 5 days or 6 days in a leap year
+- Number of weeks in a year: 	   40 (360 days / 9 days per week) |  Or (46 in 7 days but itterate in 9)
+- Number of days per month: 	   45 (5 weeks x 9 days per week)
+- Number of days per season: 	   90 (2 months x 45 days per month)
+- Number of months per year: 	   8 (4 seasons x 2 months per season)
+- Number of days in a year: 	   365 (360 days + 5 free days) or 366 (360 days + 6 free days) in a leap year
+- Number of free days per year:  5 days or 6 days in a leap year
 
 To schedule holidays or specialoccasions using the free days, we can simply add them to the end of the year and distribute them as needed. For example, if there are 5 free days, we could allocate 2 days for a winter holiday, 2 days for a summer holiday, and 1 day for a spring or fall holiday. If there are 6 free days in a leap year, we could allocate an extra day to each holiday.
 
-Something like this:
+Something like this: ([idea](https://github.com/mosi-arch/research/blob/main/Mathematics/08-new-calender-algorithm.md#holydays-idea))
 
 - Winter holiday: 	December 25th-26th (2 days)
 - Spring holiday: 	March 21st (1 day)
 - Summer holiday: 	July 4th-5th (2 days)
-- Fall holiday: 	October 31st (1 day)
+- Fall holiday: 	   October 31st (1 day)
 > this st-th location on normal calender we use. this example for realize and imagination.
 
 With this schedule, the free days would be used for holidays that are evenly spaced throughout the year.
