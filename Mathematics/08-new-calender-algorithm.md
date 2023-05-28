@@ -30,7 +30,7 @@ An algorithm for creating a new week system based on a different number of days:
 
 The week days of a month in a 9-day week system with 5 weeks per month:
 
-| Week | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |  x day   |  y day   |
+| Week | Sun    | Moon   | Star    | Sky       | Earth    | Water  | Fire     | Wind     |  Tree    |
 |------|--------|--------|---------|-----------|----------|--------|----------|----------|----------|
 | 1    | Day 1  | Day 2  | Day 3   | Day 4     | Day 5    | Day 6  | Day 7    | Day 8    | Day 9    |
 | 2    | Day 10 | Day 11 | Day 12  | Day 13    | Day 14   | Day 15 | Day 16   | Day 17   | Day 18   |
