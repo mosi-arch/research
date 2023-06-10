@@ -52,6 +52,50 @@ The algorithm for a new year system with 15 months, where 10 months have 24 days
 | Month14| 25  | 14     |
 | Month15| 25  | 15     |
 
+#
+
+### Mathematical Formula:
+
+1. Total number of days in a non-leap year:
+
+`Total days = [10 * 24] + [5 * 25] = 365`
+
+2. Total number of days in a leap year:
+
+`Total days = [9 * 24] + [6 * 25] = 366`
+
+3. Number of days in a month:
+
+For months 1-10 (non-leap year), or months 1-9 and 11-15 (leap year):
+
+`Days in month = 24`
+
+For months 11-15 (non-leap year), or month 10 (leap year):
+
+`Days in month = 25`
+
+4. Assigning a number to each month:
+
+For months 1-10 (non-leap year), or months 1-9 and 11-15 (leap year):
+
+`Number = month number`
+
+For month 10 (non-leap year):
+
+`Number = 10`
+
+For month 10 (leap year):
+
+`Number = 9`
+
+For months 11-15 (non-leap year):
+
+`Number = month number + 5`
+
+For months 10-15 (leap year):
+
+`Number = month number + 4`
+
 ---
 
 > this algorithm made by me in the year 2000. iran, shiraz 
