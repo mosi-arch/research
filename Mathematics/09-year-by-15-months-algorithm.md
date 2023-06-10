@@ -99,4 +99,4 @@ For months 10-15 (leap year):
 
 ---
 
-> this algorithm made by me in the year 2000. iran, shiraz 
+> this algorithm made by me in the year 2000. iran, shiraz university
