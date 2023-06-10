@@ -11,7 +11,7 @@ The algorithm for a new year system with 15 months, where 10 months have 24 days
 
 5. Calculate the total number of days in the year by adding up the number of days in each month.
 
-6. Season 1: first four months. Season 2: next four months. Season 3: next three months. Season 4: last four monts.
+6. **Season 1**: first four months. **Season 2**: next four months. **Season 3**: next three months. **Season 4**: last four monts.
 
 - Non-leap year:
 
