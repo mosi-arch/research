@@ -1,3 +1,4 @@
+## New year system with 15 months
 The algorithm for a new year system with 15 months, where 10 months have 24 days and 5 months have 25 days. If it's a leap year, then 9 months have 24 days and 6 months have 25 days:
 
 1. Determine if it's a leap year. A leap year is any year that is evenly divisible by 4, except for years that are also divisible by 100 but not by 400. If it's a leap year, then set the number of days in 9 months to 24 and the number of days in 6 months to 25. Otherwise, set the number of days in 10 months to 24 and the number of days in 5 months to 25.
