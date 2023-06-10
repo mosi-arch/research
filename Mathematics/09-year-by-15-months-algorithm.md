@@ -1,0 +1,57 @@
+The algorithm for a new year system with 15 months, where 10 months have 24 days and 5 months have 25 days. If it's a leap year, then 9 months have 24 days and 6 months have 25 days:
+
+1. Determine if it's a leap year. A leap year is any year that is evenly divisible by 4, except for years that are also divisible by 100 but not by 400. If it's a leap year, then set the number of days in 9 months to 24 and the number of days in 6 months to 25. Otherwise, set the number of days in 10 months to 24 and the number of days in 5 months to 25.
+
+2. Visualizing a table with 15 rows, one for each month. Label the first 10 rows with the names of the 10 months that have 24 days, and label the next 5 rows with the names of the 5 months that have 25 days.
+
+3. For each month with 24 days, assign a number from 1 to 10. For example, the first month could be assigned the number 1, the second month could be assigned the number 2, and so on.
+
+4. For each month with 25 days, assign a number from 11 to 15. For example, the first month could be assigned the number 11, the second month could be assigned the number 12, and so on.
+
+5. Calculate the total number of days in the year by adding up the number of days in each month.
+
+6. Season 1: first four months. Season 2: next four months. Season 3: next three months. Season 4: last four monts.
+
+- Non-leap year:
+
+| Month | Days | Number |
+|-------|------|--------|
+| Month1| 24   | 1      |
+| Month2| 24   | 2      |
+| Month3| 24   | 3      |
+| Month4| 24   | 4      |
+| Month5| 24   | 5      |
+| Month6| 24   | 6      |
+| Month7| 24   | 7      |
+| Month8| 24   | 8      |
+| Month9| 24   | 9      |
+| Month10| 24  | 10     |
+| Month11| 25  | 11     |
+| Month12| 25  | 12     |
+| Month13| 25  | 13     |
+| Month14| 25  | 14     |
+| Month15| 25  | 15     |
+
+- Leap year:
+
+| Month | Days | Number |
+|-------|------|--------|
+| Month1| 24   | 1      |
+| Month2| 24   | 2      |
+| Month3| 24   | 3      |
+| Month4| 24   | 4      |
+| Month5| 24   | 5      |
+| Month6| 24   | 6      |
+| Month7| 24   | 7      |
+| Month8| 24   | 8      |
+| Month9| 24   | 9      |
+| Month10| 25  | 10     |
+| Month11| 25  | 11     |
+| Month12| 25  | 12     |
+| Month13| 25  | 13     |
+| Month14| 25  | 14     |
+| Month15| 25  | 15     |
+
+---
+
+> this algorithm made by me in the year 2000. iran, shiraz 
