@@ -562,9 +562,74 @@ async function getAllowance(owner, spender) {
 #### CSMM
 
 ```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
+contract CSMM {
+    struct Token {
+        uint256 reserve;
+        uint256 supply;
+    }
+    
+    mapping(address => Token) public tokens;
+    
+    event TokensAdded(address indexed token1, uint256 amount1, address indexed token2, uint256 amount2);
+    event TokensRemoved(address indexed token1, uint256 amount1, address indexed token2, uint256 amount2);
+    
+    function addTokens(address token1, uint256 amount1, address token2, uint256 amount2) external {
+        require(amount1 > 0 && amount2 > 0, "Amounts must be greater than zero");
+        tokens[token1].reserve += amount1;
+        tokens[token1].supply += amount1;
+        tokens[token2].reserve += amount2;
+        tokens[token2].supply += amount2;
+        emit TokensAdded(token1, amount1, token2, amount2);
+    }
+    
+    function removeTokens(address token1, uint256 amount1, address token2, uint256 amount2) external {
+        require(amount1 > 0 && amount2 > 0, "Amounts must be greater than zero");
+        require(tokens[token1].supply >= amount1 && tokens[token2].supply >= amount2, "Insufficient reserves");
+        tokens[token1].reserve -= amount1;
+        tokens[token1].supply -= amount1;
+        tokens[token2].reserve -= amount2;
+        tokens[token2].supply -= amount2;
+        emit TokensRemoved(token1, amount1, token2, amount2);
+    }
+    
+    function getConstant(address token1, address token2) external view returns (uint256) {
+        require(tokens[token1].supply > 0 && tokens[token2].supply > 0, "Tokens not found");
+        return tokens[token1].reserve * tokens[token2].reserve;
+    }
+}
 ```
 
 ```js
+const Web3 = require('web3');
+const CSMMabi = require('./CSMMabi.json');
 
+const web3 = new Web3('http://localhost:8545');
+const CSMMaddress = '0x1234567890123456789012345678901234567890';
+const CSMM = new web3.eth.Contract(CSMMabi, CSMMaddress);
+
+const token1 = '0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+const token2 = '0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb';
+
+// Add tokens to the DEX
+const addTokens = async (token1Amount, token2Amount) => {
+  const accounts = await web3.eth.getAccounts();
+  const result = await CSMM.methods.addTokens(token1, token1Amount, token2, token2Amount).send({ from: accounts[0] });
+  console.log(result);
+};
+
+// Remove tokens from the DEX
+const removeTokens = async (token1Amount, token2Amount) => {
+  const accounts = await web3.eth.getAccounts();
+  const result = await CSMM.methods.removeTokens(token1, token1Amount, token2, token2Amount).send({ from: accounts[0] });
+  console.log(result);
+};
+
+// Get the constant of the CSMM formula
+const getConstant = async () => {
+  const result = await CSMM.methods.getConstant(token1, token2).call();
+  console.log(result);
+};
 ```
