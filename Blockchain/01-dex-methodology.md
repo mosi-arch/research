@@ -40,6 +40,11 @@ Constant summary with market maker (**CSMM**)\
 - - this codes simple, not for product, for learning.
 - this codes have "address(x)", this is for test and codes have error.
 
+- CMMM [example](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md#cmmm)
+- CFMM [example](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md#cfmm)
+- CPMM [example](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md#cpmm)
+- CSMM [example](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md#csmm)
+
 #### CMMM
 ```solidity
 // SPDX-License-Identifier: MIT
