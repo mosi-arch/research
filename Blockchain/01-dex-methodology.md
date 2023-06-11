@@ -32,3 +32,9 @@ Constant summary with market maker (**CSMM**)\
 بازارسازان با عملکرد ثابت\
 بازارسازان با محصول ثابت\
 بازارسازان با مجموع ثابت
+
+---
+
+### Simple codes:
+- don't use theses codes on product, these codes just example.
+
