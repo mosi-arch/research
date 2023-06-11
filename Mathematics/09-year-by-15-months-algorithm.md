@@ -15,43 +15,43 @@ The algorithm for a new year system with 15 months, where 10 months have 24 days
 
 - Non-leap year:
 
-| Month | Days | Number |
-|-------|------|--------|
-| Month1| 24   | 1      |
-| Month2| 24   | 2      |
-| Month3| 24   | 3      |
-| Month4| 24   | 4      |
-| Month5| 24   | 5      |
-| Month6| 24   | 6      |
-| Month7| 24   | 7      |
-| Month8| 24   | 8      |
-| Month9| 24   | 9      |
-| Month10| 24  | 10     |
-| Month11| 25  | 11     |
-| Month12| 25  | 12     |
-| Month13| 25  | 13     |
-| Month14| 25  | 14     |
-| Month15| 25  | 15     |
+| Month | Days | Number | Season |
+|-------|------|--------|--------|
+| Month1| 24   | 1      | 1      |
+| Month2| 24   | 2      | 1      |
+| Month3| 24   | 3      | 1      |
+| Month4| 24   | 4      | 1      |
+| Month5| 24   | 5      | 2      |
+| Month6| 24   | 6      | 2      |
+| Month7| 24   | 7      | 2      |
+| Month8| 24   | 8      | 2      |
+| Month9| 24   | 9      | 3      |
+| Month10| 24  | 10     | 3      |
+| Month11| 25  | 11     | 3      |
+| Month12| 25  | 12     | 4      |
+| Month13| 25  | 13     | 4      |
+| Month14| 25  | 14     | 4      |
+| Month15| 25  | 15     | 4      |
 
 - Leap year:
 
-| Month | Days | Number |
-|-------|------|--------|
-| Month1| 24   | 1      |
-| Month2| 24   | 2      |
-| Month3| 24   | 3      |
-| Month4| 24   | 4      |
-| Month5| 24   | 5      |
-| Month6| 24   | 6      |
-| Month7| 24   | 7      |
-| Month8| 24   | 8      |
-| Month9| 24   | 9      |
-| Month10| 25  | 10     |
-| Month11| 25  | 11     |
-| Month12| 25  | 12     |
-| Month13| 25  | 13     |
-| Month14| 25  | 14     |
-| Month15| 25  | 15     |
+| Month | Days | Number | Season |
+|-------|------|--------|--------|
+| Month1| 24   | 1      | 1      |
+| Month2| 24   | 2      | 1      |
+| Month3| 24   | 3      | 1      |
+| Month4| 24   | 4      | 1      |
+| Month5| 24   | 5      | 2      |
+| Month6| 24   | 6      | 2      |
+| Month7| 24   | 7      | 2      |
+| Month8| 24   | 8      | 2      |
+| Month9| 24   | 9      | 3      |
+| Month10| 25  | 10     | 3      |
+| Month11| 25  | 11     | 3      |
+| Month12| 25  | 12     | 4      |
+| Month13| 25  | 13     | 4      |
+| Month14| 25  | 14     | 4      |
+| Month15| 25  | 15     | 4      |
 
 #
 
