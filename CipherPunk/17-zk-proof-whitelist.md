@@ -130,3 +130,55 @@ interface IProof {
     function generateProof(uint256[] calldata input) external view returns (uint256[] memory inputs, uint256[] memory outputs);
 }
 ```
+
+- example 3 (verifier, proof):
+```solidity
+pragma solidity ^0.8.0;
+
+contract ZKProof {
+    uint256 private constant p = 115792089237316195423570985008687907853269984665640564039457584007908834671663;
+    uint256 private constant q = 28948022309329048855892746252171976963317496166410141009864396001978282409983;
+    uint256 private constant g = 2;
+    uint256 private constant h = 3;
+
+    struct Proof {
+        uint256 a;
+        uint256 b;
+    }
+
+    function verify(uint256 x, Proof memory proof) public view returns (bool) {
+        require(proof.a > 0 && proof.a < p, "Invalid proof a");
+        require(proof.b > 0 && proof.b < q, "Invalid proof b");
+
+        uint256 lhs = modexp(g, x, p);
+        uint256 rhs = modexp(h, proof.a, p) * modexp(proof.b, q, p) % p;
+
+        return lhs == rhs;
+    }
+
+    function modexp(uint256 base, uint256 exponent, uint256 modulus) internal pure returns (uint256) {
+        uint256 result = 1;
+        while (exponent > 0) {
+            if (exponent % 2 == 1) {
+                result = mulmod(result, base, modulus);
+            }
+            base = mulmod(base, base, modulus);
+            exponent = exponent / 2;
+        }
+        return result;
+    }
+
+    function prove(uint256 x, uint256 r) public view returns (Proof memory) {
+        uint256 a = modexp(g, r, p);
+        uint256 b = (modexp(h, r, p) * modexp(g, x.mulmod(r, q).mod(q), p)).mod(q);
+
+        return Proof(a, b);
+    }
+}
+```
+
+formula used in this code:
+- g^x = h^a * b^q (mod p)
+- a = g^r (mod p) 
+- b = h^r * g^(x*r mod q) (mod p)
+- Important notice: `p` and `q` in this code is example, never use this two directly in smartcontract, use "oracle" to provide them.
