@@ -46,4 +46,5 @@ This document has been made by my freind to show me the concept of **Bitcoin ins
 Actualy I hear in this month alot about this and **ordinals** , 
 as you know (14 jun 2023) the miners in these past months build over a billion dollars from only users transactions. 
 So I think again the **brc20** is another money game of miners. 
-But this can help the ecosystem of BTC, and this is fantastic!
+But this can help the ecosystem of BTC, and this is fantastic!\
+If you want to be in this game theory, you would to find a solution to use "brc20" on **L2**.
