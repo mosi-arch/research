@@ -1,6 +1,6 @@
 ### The codes in below in "Solidity" for presenting **ZK-Proof Whitelist** idea:
 
-- example 1:
+#### example 1:
 ```solidity
 pragma solidity 0.8;
 
@@ -34,9 +34,9 @@ contract Claimable is Whitelist {
 }
 ```
 
-- example 2:
+#### example 2:
 ```solidity
-pragma solidity ^0.8.0;
+pragma solidity 0.8;
 
 library BitwiseMask {
     function setBit(uint256 mask, uint256 bit) internal pure returns (uint256) {
@@ -131,9 +131,9 @@ interface IProof {
 }
 ```
 
-- example 3 (verifier, proof):
+#### example 3 (verifier, proof):
 ```solidity
-pragma solidity ^0.8.0;
+pragma solidity 0.8;
 
 contract ZKProof {
     uint256 private constant p = 115792089237316195423570985008687907853269984665640564039457584007908834671663;
