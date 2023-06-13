@@ -99,7 +99,9 @@ contract Whitelist {
     }
     */
     
-    function verifyProof(address addressToVerify, Proof memory _proof, address verifierAddress, address proofAddress) internal view returns (bool) {
+    function verifyProof(
+    address addressToVerify, Proof memory _proof, address verifierAddress, address proofAddress
+    ) internal view returns (bool) {
         uint256[] memory input = new uint256[](2);
         input[0] = uint256(addressToVerify);
         input[1] = whitelist[addressToVerify];
@@ -123,11 +125,15 @@ contract Whitelist {
 }
 
 interface IVerifier {
-    function verifyProof(uint256 a, uint256 b, uint256[] calldata input, uint256[] calldata output) external view returns (bool);
+    function verifyProof(
+    uint256 a, uint256 b, uint256[] calldata input, uint256[] calldata output
+    ) external view returns (bool);
 }
 
 interface IProof {
-    function generateProof(uint256[] calldata input) external view returns (uint256[] memory inputs, uint256[] memory outputs);
+    function generateProof(
+    uint256[] calldata input) external view returns (uint256[] memory inputs, uint256[] memory outputs
+    );
 }
 ```
 
