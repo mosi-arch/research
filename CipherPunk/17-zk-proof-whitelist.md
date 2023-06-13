@@ -79,9 +79,42 @@ contract Whitelist {
         }
     }
 
+    /*
     function verifyProof(address addressToVerify, Proof memory _proof) internal view returns (bool) {
-        // TODO: Implement zk-SNARK verification of the proof
-        return true;
+        uint256[] memory input = new uint256[](2);
+        input[0] = uint256(addressToVerify);
+        input[1] = whitelist[addressToVerify];
+
+        // Initialize ZoKrates verifier contract
+        IVerifier verifier = IVerifier(0x0000000000000000000000000000000000000000); // Replace with actual verifier contract address
+
+        // Initialize ZoKrates proof contract
+        IProof proof = IProof(0x0000000000000000000000000000000000000000); // Replace with actual proof contract address
+
+        // Generate proof using ZoKrates
+        (uint256[] memory proofInputs, uint256[] memory proofOutputs) = proof.generateProof(input);
+
+        // Verify proof using ZoKrates verifier
+        return verifier.verifyProof(_proof.a, _proof.b, proofInputs, proofOutputs);
+    }
+    */
+    
+    function verifyProof(address addressToVerify, Proof memory _proof, address verifierAddress, address proofAddress) internal view returns (bool) {
+        uint256[] memory input = new uint256[](2);
+        input[0] = uint256(addressToVerify);
+        input[1] = whitelist[addressToVerify];
+
+        // Initialize ZoKrates verifier contract
+        IVerifier verifier = IVerifier(verifierAddress);
+
+        // Initialize ZoKrates proof contract
+        IProof proof = IProof(proofAddress);
+
+        // Generate proof using ZoKrates
+        (uint256[] memory proofInputs, uint256[] memory proofOutputs) = proof.generateProof(input);
+
+        // Verify proof using ZoKrates verifier
+        return verifier.verifyProof(_proof.a, _proof.b, proofInputs, proofOutputs);
     }
 
     function canClaim(address addressToCheck) external view returns (bool) {
