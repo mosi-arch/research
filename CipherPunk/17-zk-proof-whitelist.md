@@ -182,3 +182,4 @@ formula used in this code:
 - a = g^r (mod p) 
 - b = h^r * g^(x*r mod q) (mod p)
 - Important notice: `p` and `q` in this code is example, never use this two directly in smartcontract, use "oracle" to provide them.
+- `p` and `q` are the big prime numbers.
