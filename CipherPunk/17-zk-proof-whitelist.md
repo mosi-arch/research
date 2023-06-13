@@ -121,4 +121,12 @@ contract Whitelist {
         return whitelist[addressToCheck].hasBit(0);
     }
 }
+
+interface IVerifier {
+    function verifyProof(uint256 a, uint256 b, uint256[] calldata input, uint256[] calldata output) external view returns (bool);
+}
+
+interface IProof {
+    function generateProof(uint256[] calldata input) external view returns (uint256[] memory inputs, uint256[] memory outputs);
+}
 ```
