@@ -85,16 +85,16 @@ contract Whitelist {
         input[0] = uint256(addressToVerify);
         input[1] = whitelist[addressToVerify];
 
-        // Initialize ZoKrates verifier contract
+        // Initialize verifier contract
         IVerifier verifier = IVerifier(0x0000000000000000000000000000000000000000); // Replace with actual verifier contract address
 
-        // Initialize ZoKrates proof contract
+        // Initialize proof contract
         IProof proof = IProof(0x0000000000000000000000000000000000000000); // Replace with actual proof contract address
 
-        // Generate proof using ZoKrates
+        // Generate proof
         (uint256[] memory proofInputs, uint256[] memory proofOutputs) = proof.generateProof(input);
 
-        // Verify proof using ZoKrates verifier
+        // Verify proof using verifier
         return verifier.verifyProof(_proof.a, _proof.b, proofInputs, proofOutputs);
     }
     */
@@ -104,16 +104,16 @@ contract Whitelist {
         input[0] = uint256(addressToVerify);
         input[1] = whitelist[addressToVerify];
 
-        // Initialize ZoKrates verifier contract
+        // Initialize verifier contract
         IVerifier verifier = IVerifier(verifierAddress);
 
-        // Initialize ZoKrates proof contract
+        // Initialize proof contract
         IProof proof = IProof(proofAddress);
 
-        // Generate proof using ZoKrates
+        // Generate proof
         (uint256[] memory proofInputs, uint256[] memory proofOutputs) = proof.generateProof(input);
 
-        // Verify proof using ZoKrates verifier
+        // Verify proof using verifier
         return verifier.verifyProof(_proof.a, _proof.b, proofInputs, proofOutputs);
     }
 
