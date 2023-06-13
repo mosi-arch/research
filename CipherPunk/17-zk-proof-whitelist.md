@@ -1,5 +1,6 @@
-The code in below in "Solidity" for presenting **ZK-Proof Whitelist** idea:
+### The codes in below in "Solidity" for presenting **ZK-Proof Whitelist** idea:
 
+- example 1:
 ```solidity
 pragma solidity 0.8;
 
@@ -29,6 +30,62 @@ contract Claimable is Whitelist {
         require(proofHash == CLAIM_HASH, "Invalid proof");
 
         // Perform claim logic here
+    }
+}
+```
+
+- example 2:
+```solidity
+pragma solidity ^0.8.0;
+
+library BitwiseMask {
+    function setBit(uint256 mask, uint256 bit) internal pure returns (uint256) {
+        return mask | (1 << bit);
+    }
+
+    function clearBit(uint256 mask, uint256 bit) internal pure returns (uint256) {
+        return mask & ~(1 << bit);
+    }
+
+    function hasBit(uint256 mask, uint256 bit) internal pure returns (bool) {
+        return (mask & (1 << bit)) != 0;
+    }
+}
+
+contract Whitelist {
+    using BitwiseMask for uint256;
+
+    struct Proof {
+        uint256 a;
+        uint256 b;
+    }
+
+    mapping(address => uint256) public whitelist;
+    mapping(address => Proof) public proofs;
+
+    function addToWhitelist(address[] calldata addresses, Proof[] calldata _proofs) external {
+        require(addresses.length == _proofs.length, "Invalid input");
+
+        for (uint256 i = 0; i < addresses.length; i++) {
+            require(verifyProof(addresses[i], _proofs[i]), "Invalid proof");
+
+            whitelist[addresses[i]] = whitelist[addresses[i]].setBit(0);
+        }
+    }
+
+    function removeFromWhitelist(address[] calldata addresses) external {
+        for (uint256 i = 0; i < addresses.length; i++) {
+            whitelist[addresses[i]] = whitelist[addresses[i]].clearBit(0);
+        }
+    }
+
+    function verifyProof(address addressToVerify, Proof memory _proof) internal view returns (bool) {
+        // TODO: Implement zk-SNARK verification of the proof
+        return true;
+    }
+
+    function canClaim(address addressToCheck) external view returns (bool) {
+        return whitelist[addressToCheck].hasBit(0);
     }
 }
 ```
