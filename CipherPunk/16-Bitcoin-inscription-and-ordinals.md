@@ -36,6 +36,8 @@ tx.sign("private_key")
 tx.broadcast()
 ```
 
+**Brief summary**: adding an inscription to a Bitcoin transaction involves encoding additional information and adding it to the output script of the transaction using an OP_RETURN opcode. The inscription can be in any format and can provide additional context or metadata about the transaction. Ordinals, which refer to the position of a transaction within the blockchain, can be used in conjunction with inscriptions to provide a more complete picture of a transaction's place in the blockchain and its purpose. The process of adding an inscription to a Bitcoin transaction typically involves creating a new transaction, adding inputs and outputs, encoding the inscription, adding it to the output script, signing the transaction with a private key, and broadcasting the transaction to the Bitcoin network.
+
 > @dev : google it [here](https://www.google.com/search?q=tell+more+about+ordinals+and+inscriptions%2C+by+example+code&rlz=1C1GCEA_enGB904GB904&ei=o1yIZKe0L5yrxc8PvJOEsAg&ved=0ahUKEwjnkci8m8D_AhWcVfEDHbwJAYYQ4dUDCA8&uact=5&oq=tell+more+about+ordinals+and+inscriptions%2C+by+example+code&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICCEQoAEQwwQyCAghEKABEMMEOgoIABBHENYEELADOgoIIRCgARDDBBAKSgQIQRgAUM4IWLpzYIp6aAJwAXgAgAGBBogB3xGSAQM2LTOYAQCgAQHAAQHIAQg&sclient=gws-wiz-serp)
 
 #### disclaimer:
