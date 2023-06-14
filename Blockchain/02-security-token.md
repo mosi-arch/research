@@ -1,5 +1,5 @@
 ## Example solidity code about "Security token for identification", by full information
-Here's an example Solidity code for a security token contract that can be used for identification purposes:
+Security token contract that can be used for identification purposes:
 ```solidity
 pragma solidity ^0.8.0;
 contract SecurityToken {
@@ -52,7 +52,7 @@ This contract can be used for identification purposes by assigning a unique toke
 
 #
 
-### Here is an example Solidity code for a security token that uses ERC721 from the OpenZeppelin library:
+### Security token that uses ERC721 from the OpenZeppelin library:
 ```solidity
 pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
@@ -86,5 +86,5 @@ This contract inherits from `ERC721`, which provides the standard functionality 
 
 ---
 
-at the end, the [erc-1450](https://eips.ethereum.org/EIPS/eip-1450) a big looser!\
+At the end, the [erc-1450](https://eips.ethereum.org/EIPS/eip-1450) a big looser!\
 and [erc-1462](https://eips.ethereum.org/EIPS/eip-1462) using just for fractional token idea...
