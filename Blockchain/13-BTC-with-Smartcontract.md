@@ -22,7 +22,9 @@ Once the smart contract is deployed, you should monitor it to ensure that it's f
 ### 7. Update the smart contract: 
 If necessary, you can update the smart contract to fix any bugs or to add new functionality. This involves modifying the smart contract code and deploying the updated version to the Bitcoin network. (re-deploy)
 
-- *This approach can be useful for creating Bitcoin smart contracts that are tied to specific Bitcoin addresses or wallets. It can also be used to create more complex smart contracts that involve multiple parties and conditions.*
+#
+
+*This approach can be useful for creating Bitcoin smart contracts that are tied to specific Bitcoin addresses or wallets. It can also be used to create more complex smart contracts that involve multiple parties and conditions.*
 
 #
 
