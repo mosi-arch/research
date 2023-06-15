@@ -30,4 +30,4 @@ Finally, a **Polkadot parachain** is a specialized blockchain that runs in paral
 
 #
 
-**Note**: Only LORD BTC is the only only Decentralized blockchain. Other blockchains used for their usecases of  DLT purposes.
+**Note**: Only LORD BTC [Bitcoin] is the only only Decentralized blockchain. Other blockchains used for their usecases of  DLT purposes.
