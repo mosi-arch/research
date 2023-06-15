@@ -104,5 +104,5 @@ ________________________________________________________________
 
 #
 
-Last update: 17 June 2023\
-Auther: Mosi-sol
+**Last update**: 17 June 2023\
+**Auther**: [Mosi-sol](https://github.com/mosi-sol)
