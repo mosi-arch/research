@@ -28,4 +28,80 @@ If necessary, you can update the smart contract to fix any bugs or to add new fu
 
 #
 
+- example code idea (fake code, not use)
+```py
+# RPC BTC
+# logic of rpc
+
+# Lock some Bitcoin in a wallet
+wallet_address = "the_wallet_address"
+amount_to_lock = 0.1
+txid = rpc_connection.sendtoaddress(wallet_address, amount_to_lock)
+
+# Define the smart contract
+def smart_contract():
+    if condition:
+        release_funds()
+    else:
+        refund_funds()
+
+# Test the smart contract
+test_condition = True
+if test_condition:
+    smart_contract()
+else:
+    refund_funds()
+
+# Deploy the smart contract
+deployed = False
+if deployed:
+    rpc_connection.sendrawtransaction(smart_contract_bytecode)
+else:
+    print("Smart contract not deployed")
+
+# Monitor the smart contract
+while True:
+    if condition_met:
+        release_funds()
+        break
+
+# Update the smart contract
+def updated_smart_contract():
+    if new_condition:
+        release_funds()
+    else:
+        refund_funds()
+
+# Interact with the smart contract
+smart_contract()
+```
+
+- simulate
+```
+________________________________________________________________
+|     Step      |                      Action                      |
+|_______________|________________________________________________  |
+| 1. Lock BTC   | Lock some Bitcoin in a wallet.                   |
+|_______________|________________________________________________  |
+| 2. Define SC  | Define the rules and conditions for the contract.|
+|_______________|________________________________________________  |
+| 3. Test SC    | Test the smart contract to ensure it functions   |
+|               | correctly.                                       |
+|_______________|________________________________________________  |
+| 4. Deploy SC  | Deploy the smart contract to the Bitcoin network.|
+|_______________|________________________________________________  |
+| 5. Monitor SC | Monitor the smart contract to ensure it's        |
+|               | functioning correctly and no unexpected behavior |
+|               | is occurring.                                    |
+|_______________|________________________________________________  |
+| 6. Update SC  | If necessary, update the smart contract to fix   |
+|               | bugs or add new functionality.                   |
+|_______________|________________________________________________  |
+| 7. Interact   | Interact with the smart contract to execute its  |
+|               | functions and receive its outputs.               |
+|_______________|________________________________________________  |
+```
+
+#
+
 Last update: 17 June 2023
