@@ -27,3 +27,7 @@ Finally, a **Polkadot parachain** is a specialized blockchain that runs in paral
 | **Consensus Algorithm** | Ethereum uses proof-of-work (PoW) but is transitioning to proof-of-stake (PoS) | Tendermint, a Byzantine Fault Tolerance (BFT) consensus algorithm | Varies depending on the parachain, but can include PoW, PoS, or other consensus algorithms |
 | **Communication** | Smart contracts can interact with other smart contracts on the Ethereum blockchain | Blockchains can communicate and interact with each other using the Cosmos Hub | Parachains can communicate with each other and with the main blockchain (usually on a Polkadot network) |
 | **Customizability** | Smart contracts can be customized to meet the needs of different projects | Cosmos SDK allows developers to create their own blockchains and customize them as needed | Parachains can be customized to handle specific use cases and can be built to meet the needs of different projects |
+
+#
+
+**Note**: Only LORD BTC is the only only Decentralized blockchain. Other blockchains used for their usecases of  DLT purposes.
