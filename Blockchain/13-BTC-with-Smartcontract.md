@@ -1,5 +1,5 @@
 ## BTC L3 Proposal "BIP mosi"
-A prorammed wallet to lock Bitcoin and generate a smart contract. Algorithm (L3-Proposal):
+*A prorammed wallet to lock Bitcoin and generate a smart contract. Algorithm* (**L3-Proposal**):
 
 ### 1. Lock the Bitcoin: 
 To create a Bitcoin smart contract, you can lock some Bitcoin in a wallet. This wallet can be programmed to only release the Bitcoin if certain conditions are met.
@@ -22,7 +22,7 @@ Once the smart contract is deployed, you should monitor it to ensure that it's f
 ### 7. Update the smart contract: 
 If necessary, you can update the smart contract to fix any bugs or to add new functionality. This involves modifying the smart contract code and deploying the updated version to the Bitcoin network. (re-deploy)
 
-*This approach can be useful for creating Bitcoin smart contracts that are tied to specific Bitcoin addresses or wallets. It can also be used to create more complex smart contracts that involve multiple parties and conditions.*
+- *This approach can be useful for creating Bitcoin smart contracts that are tied to specific Bitcoin addresses or wallets. It can also be used to create more complex smart contracts that involve multiple parties and conditions.*
 
 #
 
