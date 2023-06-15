@@ -28,7 +28,7 @@ If necessary, you can update the smart contract to fix any bugs or to add new fu
 
 #
 
-- example code idea (fake code, not use)
+- example code idea (fake/mock code, not use)
 ```py
 # RPC BTC
 # logic of rpc
