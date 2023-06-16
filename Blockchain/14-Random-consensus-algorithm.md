@@ -25,16 +25,16 @@ The key steps in a blockchain network, including transaction processing, validat
 
 | Step | Description |
 | --- | --- |
-| Step 1: Define Rules | Define the rules of the blockchain network, including the consensus algorithm, block size, and reward for mining a block. |
-| Step 2: Create Genesis Block | Create the first block in the chain, which contains all the rules of the network. |
-| Step 3: Join Network | Nodes join the network and start validating and mining blocks. |
-| Step 4: Validate Transaction | Nodes validate transactions by checking if they meet the rules of the network. |
-| Step 5: Broadcast Transaction | If a transaction is valid, nodes broadcast it to the network. |
-| Step 6: Mine Block | Miners compete to create a new block by solving a complex mathematical puzzle. |
-| Step 7: Create Block | The first miner to solve the puzzle creates a new block and broadcasts it to the network. |
-| Step 8: Confirm Block | Nodes confirm the block by checking if it contains valid transactions and meets the rules of the network. |
-| Step 9: Add Block to Blockchain | If the block is valid, nodes add it to their copy of the blockchain, creating a new version of the blockchain. |
-| Step 10: Process Transaction | To process a transaction, a user sends a transaction to the network for validation, inclusion in a block, and confirmation. |
+| **Step 1: Define Rules** | Define the rules of the blockchain network, including the consensus algorithm, block size, and reward for mining a block. |
+| **Step 2: Create Genesis Block** | Create the first block in the chain, which contains all the rules of the network. |
+| **Step 3: Join Network** | Nodes join the network and start validating and mining blocks. |
+| **Step 4: Validate Transaction** | Nodes validate transactions by checking if they meet the rules of the network. |
+| **Step 5: Broadcast Transaction** | If a transaction is valid, nodes broadcast it to the network. |
+| **Step 6: Mine Block** | Miners compete to create a new block by solving a complex mathematical puzzle. |
+| **Step 7: Create Block** | The first miner to solve the puzzle creates a new block and broadcasts it to the network. |
+| **Step 8: Confirm Block** | Nodes confirm the block by checking if it contains valid transactions and meets the rules of the network. |
+| **Step 9: Add Block to Blockchain** | If the block is valid, nodes add it to their copy of the blockchain, creating a new version of the blockchain. |
+| **Step 10: Process Transaction** | To process a transaction, a user sends a transaction to the network for validation, inclusion in a block, and confirmation. |
 
 #
 
