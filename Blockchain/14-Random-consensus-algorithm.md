@@ -206,4 +206,4 @@ Validation Process
 
 ---
 
-Made by [Mosi-sol](https://github.com/mosi-sol) 
+**Made by** [Mosi-sol](https://github.com/mosi-sol) 
