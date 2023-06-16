@@ -2,19 +2,19 @@
 A high-level simulation of how a blockchain network, validation, and transaction process might work.\
 Simple example of 10 validator, 1 random validate, second random valid the block and confirm the first validator, other validator accept the block to save in DLT.
 
-**1. Creating the Blockchain Network**:
+**1. Creating the Blockchain Network**:\
 To create a blockchain network, we need to first define the rules of the network, such as the consensus algorithm, the block size, and the reward for mining a block. We then create a genesis block, which is the first block in the chain and contains all the rules of the network. Once the genesis block is created, nodes can join the network and start validating and mining blocks.
 
-**2. Validation**:
+**2. Validation**:\
 Nodes in a blockchain network validate transactions by checking if they meet the rules of the network. For example, if the network has a rule that a transaction must have a valid digital signature, nodes will check if the signature is valid. If a transaction is valid, nodes will broadcast it to the network.
 
-**3. Mining**:
+**3. Mining**:\
 Mining is the process of adding transactions to the blockchain by creating a new block. Miners compete to create a new block by solving a complex mathematical puzzle, which requires a lot of computational power. The first miner to solve the puzzle creates a new block and broadcasts it to the network.
 
-**4. Block Confirmation**:
+**4. Block Confirmation**:\
 Once a block is created, it needs to be confirmed by other nodes in the network. Nodes will check if the block contains valid transactions and meets the rules of the network. If the block is valid, nodes will add it to their copy of the blockchain, creating a new version of the blockchain.
 
-**5. Transaction Process**:
+**5. Transaction Process**:\
 To process a transaction, a user sends a transaction to the network, which is then validated by nodes. Once the transaction is validated, miners include it in the next block they create. Once the block is confirmed by the network, the transaction is considered complete.
 
 **P.S**: Blockchain networks use consensus algorithms to validate transactions and create new blocks. Miners compete to create new blocks, which are then confirmed by other nodes in the network. Transactions are processed by sending them to the network for validation, inclusion in a block, and confirmation.
@@ -179,7 +179,7 @@ else:
     print('Block was not broadcasted due to invalidity or lack of validation.')
 ```
 
-Final step, looking the tree chart of this code:
+**Final step, looking the tree chart of this code**:
 ```
 Validation Process
 ├── A block is created
@@ -203,3 +203,7 @@ Validation Process
 │           └── Block is not broadcasted
 └── Process repeats for each new block created in the network
 ```
+
+---
+
+Made by [Mosi-sol](https://github.com/mosi-sol) 
