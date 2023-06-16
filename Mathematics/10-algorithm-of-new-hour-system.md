@@ -3,7 +3,7 @@ The algorithm of a new time system that divides a day into 20 hours, rather than
 
 To convert a given time from the current system to the new system, we use the following formulas:
 
-```
+```js
 New Hours = (Current Hours * 20) / 24
 New Minutes = (Current Minutes * 90) / 60
 New Seconds = (Current Seconds * 80) / 60
