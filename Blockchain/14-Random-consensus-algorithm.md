@@ -180,6 +180,7 @@ else:
 ```
 
 **Final step, looking the tree chart of this code**:
+- Horizontal chart:
 ```
 Validation Process
 ├── A block is created
@@ -202,6 +203,52 @@ Validation Process
 │       └── If Validator 2 rejects Validator 1
 │           └── Block is not broadcasted
 └── Process repeats for each new block created in the network
+```
+- Vertical chart:
+```
+A block is created
+|
+Two validators are randomly selected from the network
+|
+Validator 1 checks the block
+|   \
+|    If block is valid
+|    |
+|    Validator 1 broadcasts block to Validator 2
+|    |
+|    Validator 2 validates Validator 1's validation
+|    |   \
+|    |    If Validator 2 validates Validator 1
+|    |    |
+|    |    Validator 2 broadcasts block to the network
+|    |    |
+|    |    Other nodes accept validation and add block to their copy of the blockchain
+|    |    |
+|    |    If Validator 2 rejects Validator 1
+|    |    |
+|    |    Block is not broadcasted
+|    |
+|    If Validator 2 rejects Validator 1's validation
+|    |
+|    Block is not broadcasted
+|
+If block is invalid
+|
+Block is not broadcasted
+|
+Validator 2 receives block and validates Validator 1's validation
+|   \
+|    If Validator 2 validates Validator 1
+|    |
+|    Validator 2 broadcasts block to the network
+|    |
+|    Other nodes accept validation and add block to their copy of the blockchain
+|    |
+|    If Validator 2 rejects Validator 1
+|    |
+|    Block is not broadcasted
+|
+Process repeats for each new block created in the network
 ```
 
 ---
