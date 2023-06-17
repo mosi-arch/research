@@ -104,7 +104,7 @@ Access control mechanisms can be used to restrict access to the network and prev
 5. **Regularly Audit the Network**:\
 Regular audits of the network can help to identify any vulnerabilities or weaknesses in the Snapshot Consensus algorithm. Audits can be performed by internal or external security professionals to ensure that the network is secure and reliable.
 
-By implementing these measures, the Snapshot Consensus algorithm can be made safer and more secure, ensuring that it can reliably achieve consensus on the network state in a distributed and decentralized environment.
+By implementing these measures, the **Snapshot Consensus algorithm** can be made safer and more secure, ensuring that it can reliably achieve consensus on the network state in a distributed and decentralized environment.
 
 ---
 
