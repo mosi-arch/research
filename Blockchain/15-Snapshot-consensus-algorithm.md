@@ -1,4 +1,4 @@
-## Snapshot Consensus
+## Snapshot Consensus Algorithm
 The **Snapshot Consensus algorithm** is a distributed algorithm used in blockchain networks to achieve consensus on the state of the network at a given point in time. The algorithm works by taking a snapshot of the network state and then using a voting mechanism to determine a consensus on the snapshot.
 
 The high-level overview of the **Snapshot Consensus algorithm**:
