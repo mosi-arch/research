@@ -1,0 +1,12 @@
+{
+  "name": "_AES-encrypt-decrypt-method",
+  "version": "0.2.0",
+  "description": "aes encrypt & decrypt",
+  "main": "app.js",
+  "scripts": {
+    "train": "node app"
+  },
+  "keywords": [],
+  "author": "mosi-sol",
+  "license": "ISC"
+}
