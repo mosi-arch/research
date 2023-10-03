@@ -21,6 +21,16 @@ const text = 'Hello, World!';
 const key = crypto.randomBytes(32);
 const iv = crypto.randomBytes(16);
 
+/*
+console.log("key: ", key);
+console.log("iv: ", iv);
+console.log("\n");
+
+console.log("key: ", key.toString('hex'));
+console.log("iv: ", iv.toString('hex'));
+console.log("\n");
+*/
+
 const encryptedText = encrypt(text, key, iv);
 console.log('Encrypted Text:', encryptedText);
 
