@@ -280,3 +280,5 @@ Blockchain programming need languages like C++, because combined paradigms and i
 But for smart contracts we going to the wrong way!
 
 ![Schrödinger's cat](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Schrodingers_cat.svg/330px-Schrodingers_cat.svg.png)
+
+- refrence: [declarative vs imperative programming](https://github.com/mosi-arch/research/blob/main/Mathematics/11-declarative-vs-imperative-programming.md)
