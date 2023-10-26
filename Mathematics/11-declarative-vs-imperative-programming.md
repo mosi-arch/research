@@ -22,13 +22,17 @@ Imperative programming, on the other hand, focuses on describing "how" the progr
 ### Comparison:
 The key differences between declarative and imperative programming:
 
-1. **Control Flow**: Declarative programming focuses on the relationships and constraints between data elements, while imperative programming explicitly specifies the control flow and step-by-step instructions.
+1. **Control Flow**:\
+Declarative programming focuses on the relationships and constraints between data elements, while imperative programming explicitly specifies the control flow and step-by-step instructions.
 
-2. **Mutability**: Declarative programming tends to favor immutability, where data is not modified once created, while imperative programming allows for mutable state and direct manipulation of data.
+2. **Mutability**:\
+Declarative programming tends to favor immutability, where data is not modified once created, while imperative programming allows for mutable state and direct manipulation of data.
 
-3. **Abstraction**: Declarative programming allows for a more abstract and high-level representation of the problem domain, while imperative programming often involves more low-level details and explicit instructions.
+3. **Abstraction**:\
+Declarative programming allows for a more abstract and high-level representation of the problem domain, while imperative programming often involves more low-level details and explicit instructions.
 
-4. **Readability and Maintainability**: Declarative programming can often result in more readable and maintainable code, as it focuses on the "what" rather than the "how." Imperative programming may require more effort to understand and maintain, especially in complex scenarios.
+4. **Readability and Maintainability**:\
+Declarative programming can often result in more readable and maintainable code, as it focuses on the "what" rather than the "how." Imperative programming may require more effort to understand and maintain, especially in complex scenarios.
 
 ---
 
