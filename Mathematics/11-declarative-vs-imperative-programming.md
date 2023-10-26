@@ -4,7 +4,7 @@ Declarative and imperative programming are two different paradigms in programmin
 ### Declarative Programming:
 Declarative programming focuses on describing "what" the program should do, without explicitly specifying the control flow or step-by-step instructions. Instead, it emphasizes defining relationships and constraints between different data elements. In declarative programming, you specify the desired outcome or result, and the program figures out how to achieve it.
 
-Key characteristics of declarative programming include:
+**Key characteristics of declarative programming include**:
 1. Expressing the logic of a computation without describing its control flow.
 2. Defining relationships between data elements without specifying how those relationships should be achieved.
 3. Emphasizing the use of functions or operations that transform data based on predefined rules or constraints.
@@ -13,7 +13,7 @@ Key characteristics of declarative programming include:
 ### Imperative Programming:
 Imperative programming, on the other hand, focuses on describing "how" the program should perform a task by explicitly specifying each instruction or statement step by step. It involves mutating the program's state and controlling the flow of execution through loops, conditionals, and other control structures.
 
-Key characteristics of imperative programming include:
+**Key characteristics of imperative programming include**:
 1. Using statements that change a program's state.
 2. Providing explicit instructions on how to perform a task, specifying the order of operations.
 3. Allowing for more fine-grained control over the program's execution.
