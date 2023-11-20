@@ -48,4 +48,3 @@ Wholesale market makers primarily serve other financial institutions, such as ba
 
 > Note: There is some other type of market maker exist. This essay show some of them.
 
-Unfortunately we saw only AMM type in the market of blockchain!
