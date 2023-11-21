@@ -48,3 +48,8 @@ Wholesale market makers primarily serve other financial institutions, such as ba
 
 > Note: There is some other type of market maker exist. This essay show some of them.
 
+#
+
+- Did Possible to automate all of this types? Yes
+- Why not use other typrs (except the AMM" on blockchain market? No one write decentralized code for them
+- Some use case for other types? Can to make market/marketing-plan with use other types for NFTs in 2024 halving
