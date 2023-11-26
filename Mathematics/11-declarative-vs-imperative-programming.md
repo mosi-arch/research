@@ -34,9 +34,4 @@ Declarative programming allows for a more abstract and high-level representation
 4. **Readability and Maintainability**:\
 Declarative programming can often result in more readable and maintainable code, as it focuses on the "what" rather than the "how." Imperative programming may require more effort to understand and maintain, especially in complex scenarios.
 
----
 
-### Reference's:
-1. [Declarative vs imperative - DEV Community](https://dev.to/ruizb/declarative-vs-imperative-4a7l)
-2. [c# - What is the difference between declarative and imperative paradigm in programming? - Stack Overflow](https://stackoverflow.com/questions/1784664/what-is-the-difference-between-declarative-and-imperative-paradigm-in-programmin)
-3. [Declarative vs Imperative Programming | by Ian Mundy | codeburst](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2)
