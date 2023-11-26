@@ -39,4 +39,4 @@ in some cases we create our shape and move the plate of prime numbers for genera
 for example: [this fingerprint indexing system](https://github.com/f-fq-academic/finger-print-revelution-studio/tree/master) you need just add a created {[Moore](https://en.wikipedia.org/wiki/Moore_curve)} fractal and use that on "minutia" for search equation on database. the answer is true+id or false, because "ALWAYS" we find true fingerprint. actually we moving the plate of fractal on fingerprints...
 
 ### note
-The fractal each times create from random point of the "plate", so each time unique random drawing.
+The fractal each times create from random point of the "plate", so each time unique random series drawing.
