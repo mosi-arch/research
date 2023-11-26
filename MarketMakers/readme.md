@@ -56,3 +56,6 @@ Wholesale market makers primarily serve other financial institutions, such as ba
 - **Some uses for other types**? A market/marketing/sales plan can be created using other types for NFTs in/after 2024.
 - **OTC example**: [oasisdex](https://oasisdex.com/docs/references/smart-contract) , [hord](https://github.com/hord/hord-orderbook-dex-contracts/blob/master/contracts/SimpleMarket.sol)
 - **AMM example**: uniswap, sushiswap,...
+
+### Gift
+Read [this article-codes](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md) as free to learn more about the market makers.
