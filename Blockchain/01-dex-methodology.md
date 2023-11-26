@@ -6,9 +6,12 @@ formula asap
 - notice: in central-financial market, automation different by dex-gen2. because dex-gen2 using "pool" for creating the value/volume.
 ```js
 x * y = k
-k -> always constant (uniswap k is 0)
+k -> always constant 
 x -> token a
 y -> token b
+
+(uniswap k is 0)
+(dy*dx=1 OR dy*dx=0) = different dex2
 ```
 
 - **Market maker with constant averages**\
