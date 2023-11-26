@@ -6,7 +6,7 @@ formula asap
 - notice: in central-financial market, automation different by dex-gen2. because dex-gen2 using "pool" for creating the value/volume.
 ```js
 x * y = k
-k -> always constant
+k -> always constant (uniswap k is 0)
 x -> token a
 y -> token b
 ```
