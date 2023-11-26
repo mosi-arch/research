@@ -58,4 +58,4 @@ Wholesale market makers primarily serve other financial institutions, such as ba
 - **AMM example**: uniswap, sushiswap,...
 
 ### Gift
-Read [this article-codes](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md) as free to learn more about the market makers.
+Read [this article-codes](https://github.com/mosi-arch/research/blob/main/Blockchain/01-dex-methodology.md) as free to learn more about the automated types of market makers.
